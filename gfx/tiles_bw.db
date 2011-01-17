@@ -1,0 +1,16 @@
+# 1 gfx/tiles/bw/full.png
+o 0 gfx/tiles/bw/full_grey.png
+[ 1 gfx/tiles/bw/left_ground.png
+] 1 gfx/tiles/bw/right_ground.png
+\ 1 gfx/tiles/bw/bottom_left.png
+/ 1 gfx/tiles/bw/bottom_right.png
+= 1 gfx/tiles/bw/bottom_center.png
+V 1 gfx/tiles/bw/single_platform.png
+x 2 gfx/tiles/bw/spikes.png
+~ 0 gfx/tiles/bw/water.png
+W 0 gfx/tiles/bw/full_water.png
+T 0 gfx/tiles/bw/tree.png
+, 0 gfx/tiles/bw/grass.png
+j 0 gfx/tiles/bw/vine.png
+i 0 gfx/tiles/bw/plant.png
+F 0 gfx/text/congrats.png

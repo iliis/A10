@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="main_screen.svg"
+   inkscape:export-filename="/home/samuel/projects/eiffel/A10/gfx/text/start.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       id="filter4622">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.397059"
+         id="feGaussianBlur4624" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4694">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="9.207387"
+         id="feGaussianBlur4696" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4712"
+       x="-0.031899108"
+       width="1.0637982"
+       y="-0.37719326"
+       height="1.7543865">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.9986864"
+         id="feGaussianBlur4714" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4720"
+       x="-0.042905457"
+       width="1.0858109"
+       y="-0.45600857"
+       height="1.9120171">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="6.8629289"
+         id="feGaussianBlur4722" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4766">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.513539"
+         id="feGaussianBlur4768" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4798"
+       x="-0.028937405"
+       width="1.0578748"
+       y="-0.21397605"
+       height="1.4279521">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.319621"
+         id="feGaussianBlur4800" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4804"
+       x="-0.049462722"
+       width="1.0989254"
+       y="-0.18929519"
+       height="1.3785904">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="20.845005"
+         id="feGaussianBlur4806" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4864"
+       x="-0.051682633"
+       width="1.1033653"
+       y="-0.13345352"
+       height="1.266907">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="14.695774"
+         id="feGaussianBlur4866" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#232323"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="1097.8914"
+     inkscape:cy="347.63689"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1680"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-452.36218)">
+    <rect
+       style="opacity:1;fill:#ff1c1c;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect4812"
+       width="3638.5713"
+       height="454.28571"
+       x="-2021.4286"
+       y="1080.9336"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/gameover.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/gameover.png"
+       y="-686.6286"
+       x="-1897.2023"
+       height="425.71426"
+       width="2661.4285"
+       id="rect4822"
+       style="opacity:0.89072846;fill:#d00000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path4604"
+       d="m 620.71429,892.36218 -490,0 0,-390 540,0 0,340 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter4622)"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m 620,892.36218 -490,0 0,-390 540,0 0,340 z"
+       id="rect4601"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g3955">
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+         xml:space="preserve"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff1c1c;fill-opacity:1;stroke:none;filter:url(#filter4694);font-family:DINPro;-inkscape-font-specification:DINPro Bold;opacity:0.54635761999999999"
+         x="404.99689"
+         y="711.94073"
+         id="text4674"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="404.99689"
+           y="711.94073"
+           style="font-size:200px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ff1c1c;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+           id="tspan4676">A10</tspan></text>
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+         sodipodi:linespacing="125%"
+         id="text3755"
+         y="711.94073"
+         x="404.99689"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff1c1c;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         xml:space="preserve"><tspan
+           id="tspan3761"
+           style="font-size:200px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ff1c1c;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+           y="711.94073"
+           x="404.99689"
+           sodipodi:role="line">A10</tspan></text>
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3767"
+       y="746.60071"
+       x="399.59454"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Light"
+       xml:space="preserve"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         id="tspan3769"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Light"
+         y="746.60071"
+         x="399.59454"
+         sodipodi:role="line">a game by Samuel Bryner</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4577"
+       y="802.9118"
+       x="399.35593"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+       xml:space="preserve"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         id="tspan4579"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         y="802.9118"
+         x="399.35593"
+         sodipodi:role="line">press any key to start</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Light;filter:url(#filter4712);opacity:0.37748344"
+       x="399.59454"
+       y="746.60071"
+       id="text4678"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="399.59454"
+         y="746.60071"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Light"
+         id="tspan4680">a game by Samuel Bryner</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold;filter:url(#filter4720);opacity:0.56622517"
+       x="399.35593"
+       y="802.9118"
+       id="text4682"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="399.35593"
+         y="802.9118"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         id="tspan4684">press any key to start</tspan></text>
+    <g
+       id="g4824"
+       transform="translate(194.28571,-506.42861)"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/died.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/died.png"
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path4760"
+         d="m -507.14286,746.64789 -490,0 0,-264.28571 540,0 0,214.28571 z"
+         style="opacity:0.81456951;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter4766)" />
+      <path
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="m -507.14286,746.64789 -490,0 0,-264.28571 540,0 0,214.28571 z"
+         id="path4726"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc"
+         inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/died.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/died.png"
+         xml:space="preserve"
+         style="font-size:115.10754395px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         x="-729.125"
+         y="671.41931"
+         id="text4730"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="-729.125"
+           y="671.41931"
+           style="font-size:159.87158203px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+           id="tspan4732">DEAD</tspan></text>
+    </g>
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+       sodipodi:linespacing="125%"
+       id="text4808"
+       y="1486.1184"
+       x="-555.44238"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;opacity:0.75165561;fill:#000000;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+       xml:space="preserve"><tspan
+         id="tspan4810"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         y="1486.1184"
+         x="-555.44238"
+         sodipodi:role="line">press ESC to quit</tspan></text>
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/gameover.png"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path4802"
+       d="m 254.99993,1440.2193 -961.42858,0 0,-264.2857 1011.42858,0 0,214.2857 z"
+       style="opacity:0.89072846;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter4804)" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m 254.99993,1440.2193 -961.42858,0 0,-264.2857 1011.42858,0 0,214.2857 z"
+       id="path4772"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/died.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/died.png"
+       xml:space="preserve"
+       style="font-size:115.10754395px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+       x="-218.24481"
+       y="1364.9907"
+       id="text4774"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-218.24483"
+         y="1364.9907"
+         style="font-size:159.87158203px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Heavy"
+         id="tspan4776">GAME OVER</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4778"
+       y="1364.9907"
+       x="-218.24481"
+       style="font-size:115.10754395px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;opacity:0.37748341;fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter4798);font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+       xml:space="preserve"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/died.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         id="tspan4780"
+         style="font-size:159.87158203px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Heavy"
+         y="1364.9907"
+         x="-218.24483"
+         sodipodi:role="line">GAME OVER</tspan></text>
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/concrats.png"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path4862"
+       d="m 997.13555,210.78128 -632.43151,0 0,-264.28571 682.43156,0 0,214.28571 z"
+       style="opacity:0.83443705;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter4864)" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m 997.13555,210.78128 -632.43151,0 0,-264.28571 682.43156,0 0,214.28571 z"
+       id="path4846"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/concrats.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/concrats.png"
+       xml:space="preserve"
+       style="font-size:115.10754395px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+       x="705.03796"
+       y="49.71841"
+       id="text4848"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="705.03796"
+         y="49.71841"
+         style="font-size:80px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         id="tspan4850">Concratulations</tspan><tspan
+         id="tspan4852"
+         sodipodi:role="line"
+         x="705.03796"
+         y="149.71841"
+         style="font-size:80px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold">you made it!</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4854"
+       y="179.01797"
+       x="773.72833"
+       style="font-size:115.10754395px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+       xml:space="preserve"
+       inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/concrats.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         y="179.01797"
+         x="773.72833"
+         sodipodi:role="line"
+         id="tspan4858">However, I've already eaten the cake...</tspan></text>
+    <rect
+       y="673.55499"
+       x="970.75653"
+       height="50"
+       width="200"
+       id="rect3185"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/samuel/KLAMATH/var/www/a10_icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g3961"
+       transform="matrix(0.21144456,0,0,0.21144456,986.1787,563.07385)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3963"
+         y="711.94073"
+         x="404.99689"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;opacity:0.54635764;fill:#ff1c1c;fill-opacity:1;stroke:none;filter:url(#filter4694);font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         xml:space="preserve"
+         inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           id="tspan3965"
+           style="font-size:200px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ff1c1c;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+           y="711.94073"
+           x="404.99689"
+           sodipodi:role="line">A10</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff1c1c;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+         x="404.99689"
+         y="711.94073"
+         id="text3967"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/samuel/Dropbox/ETH/eprog/serie10/A10/gfx/text/start.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           sodipodi:role="line"
+           x="404.99689"
+           y="711.94073"
+           style="font-size:200px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ff1c1c;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
+           id="tspan3969">A10</tspan></text>
+    </g>
+  </g>
+</svg>

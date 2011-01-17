@@ -1,0 +1,9 @@
+^ 0 gfx/tiles/green/ground_flat.png
+# 1 gfx/tiles/green/mud.png
+< 0 gfx/tiles/green/cloud1_left.png
+> 0 gfx/tiles/green/cloud1_right.png
+u 0 gfx/tiles/green/grass.png
+\ 1 gfx/tiles/green/mud_bottom_left.png
+/ 1 gfx/tiles/green/mud_bottom_right.png
+- 1 gfx/tiles/green/mud_bottom.png
+x 2 gfx/tiles/green/spikes.png
