@@ -136,6 +136,8 @@
 		<Unit filename="map_widget.cpp" />
 		<Unit filename="map_widget.hpp" />
 		<Unit filename="tile.hpp" />
+		<Unit filename="tile_manager.cpp" />
+		<Unit filename="tile_manager.hpp" />
 		<Unit filename="tile_map.cpp" />
 		<Unit filename="tile_map.hpp" />
 		<Extensions>

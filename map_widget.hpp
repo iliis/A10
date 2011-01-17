@@ -10,7 +10,7 @@ class MapWidget : public Widget
 	TileMap& map;
 protected:
 	virtual	void	_set(ptree n){};
-	virtual	void 	_draw(){};
+	virtual	void 	_draw();
 public:
 	MapWidget(TileMap& _map, string name, Kernel* k) : Widget(name,k), map(_map) {};
 };

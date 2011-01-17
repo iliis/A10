@@ -3,9 +3,10 @@
 using namespace std;
 
 //------------------------------------------------------------------------------
-TileMap::TileMap(string map_file_path)
+void
+TileMap::loadFromFile(string map_file_path, boost::function<TileSet*(string)> tileset_factory)
 {
-	memset(tiles,NULL,sizeof tiles);
+	this->deleteData();
 
 	ifstream map_file(map_file_path.c_str());
 	if(map_file.is_open())
@@ -13,7 +14,9 @@ TileMap::TileMap(string map_file_path)
 		string tiles_file;
 
 		getline(map_file, tiles_file); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
-		this->readTilesFile(tiles_file);
+		//this->readTilesFile(tiles_file);
+		this->tiles = tileset_factory(tiles_file);
+		assert(tiles);
 
 		string line;
 		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
@@ -37,6 +40,7 @@ TileMap::TileMap(string map_file_path)
 		//this->data = vector< vector<Tile*> >(this->width, vector<Tile*>(this->height));
 		data = new Tile*  [width*height];
 		memset(data, NULL, width*height*sizeof(Tile*));
+		cout << "sizeof tile*: " << sizeof(Tile*) << "  w: " << width << "  h: " << height << endl;
 
 		char c=' '; int i=0;
 		while(map_file.good() and i < width*height)
@@ -55,11 +59,10 @@ TileMap::TileMap(string map_file_path)
 				{
 					/// TODO: implement that ;)
 				}
-				else if(this->tiles[code])
-				{
-					this->data[i] = this->tiles[code];
-					cout << "found tile " << int(c) << " (" << tiles[code] << ")" << endl;
-				}
+				else if(this->tiles->hasTile(code))
+					this->data[i] = this->tiles->getTile(code);
+				else
+					this->data[i] = NULL;
 
 				++i;
 			}
@@ -74,11 +77,17 @@ TileMap::TileMap(string map_file_path)
 //------------------------------------------------------------------------------
 TileMap::~TileMap()
 {
-	delete[] data;
-
-	for(int i=0;i<256;++i)
-		if(tiles[i]) delete tiles[i];
+	this->deleteData();
 };
+//------------------------------------------------------------------------------
+void
+TileMap::deleteData()
+{
+	if(this->data)
+		delete[] this->data;
+
+	this->data = NULL;
+}
 //------------------------------------------------------------------------------
 MapCoords
 TileMap::toMapCoords(ScreenCoords v)
@@ -119,74 +128,3 @@ TileMap::toScreenCoords(MapCoords v)
 	return result;
 };
 //------------------------------------------------------------------------------
-void
-TileMap::readTilesFile(string path)
-{
-	ifstream tfile(path.c_str());
-	if(tfile.is_open())
-	{
-		int i=140;
-		string line;
-		while(tfile.good())
-		{
-			getline(tfile, line);
-
-			if(line.size() > 4) /// ignore empty lines
-			{
-				/// TODO: make separation for flag parameter via spaces (to allow for more than one digit)
-				size_t code = line[0];
-				char   flag = line[2];
-				string path = line.substr(4);
-
-				if(tiles[code])
-					cerr << "WARNING: There is already a tile with char '" << code << "'. Ignoring..." << endl;
-				else
-					tiles[code] = new Tile(path,boost::lexical_cast<uint32_t>(flag));
-
-				i -= 5;
-			}
-		}
-		cout << "loaded " << i << " tiles from " << path << endl,
-
-		tfile.close();
-	}
-	else
-		throw Error("load", "Can't reat tiles-file at all: '"+path+"'");
-};
-//------------------------------------------------------------------------------
-
-//-----------------
-/*
-
-	draw(dest:SDL_SURFACE;dx,dy: INTEGER)
-		require
-			dest /= void and then dest.valid
-		local
-			x,y:INTEGER
-		do
-			from
-				x := -dx//tile_w  -1 -- for bigger sprites
-				if x < 0 then
-					x := 0
-				end
-			until
-				x >= -dx//tile_w + dest.width//tile_w+3 or x >= width
-			loop
-				from
-					y := -dy//tile_h -1 -- for bigger sprites
-					if y < 0 then
-						y := 0
-					end
-				until
-					y >= -dy//tile_h + dest.height//tile_h+3 or y >= height
-				loop
-					if data.item (x+1,y+1) /= void then
-						data.item (x+1,y+1).draw_to (dest, x*tile_w + dx, y*tile_h + dy)
-					end
-
-					y := y + 1
-				end
-
-				x := x + 1
-			end
-		end*/
