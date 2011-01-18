@@ -132,6 +132,8 @@
 		<Unit filename="a10_common.hpp" />
 		<Unit filename="a10_game.cpp" />
 		<Unit filename="a10_game.hpp" />
+		<Unit filename="creature.cpp" />
+		<Unit filename="creature.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="map_widget.cpp" />
 		<Unit filename="map_widget.hpp" />

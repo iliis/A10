@@ -45,6 +45,8 @@ public:
 
 	~TileMap();
 
+	double getDistToNearestBlock(CBoxEdge<double>& e, double maxdist, int dim, uint32_t flag){return 1;}
+
 	inline int tileSize(int dim){assert(valid_dim(dim)); return (dim==1?this->tile_w:this->tile_h);};
 	inline Tile* getData(int x, int y){assert(x>=0 and x<width); assert(y>=0 and y<height); assert(data); return data[y*width + x];}
 	inline Tile* getData(MapCoords pos){return getData(pos.x,pos.y);}
@@ -52,6 +54,8 @@ public:
 	inline int   getHeight(){return this->height;}
 	inline int   getTileW(){return this->tile_w;}
 	inline int   getTileH(){return this->tile_h;}
+	inline int   getPixelWidth() {return this->width *this->tile_w;}
+	inline int   getPixelHeight(){return this->height*this->tile_h;}
 
 	MapCoords    toMapCoords(ScreenCoords v);
 	ScreenCoords toScreenCoords(MapCoords v);

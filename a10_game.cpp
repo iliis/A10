@@ -13,6 +13,7 @@ A10_Game::A10_Game( Kernel& k )
 
 	this->map_widget = boost::shared_ptr<MapWidget>(new MapWidget(this->map1, "main map widget", &this->kernel));
 	this->kernel.guiMgr->addWidget(map_widget);
+	map_widget->setSize(this->kernel.graphicsMgr->getScreenSize().get<float>());
 };
 //------------------------------------------------------------------------------
 A10_Game::~A10_Game()

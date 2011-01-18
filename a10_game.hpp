@@ -11,6 +11,7 @@
 
 class A10_Game
 {
+// ---------------- IMPLEMENTATION --------------------------------------
 	void keyListener(KEY k, bool state);
 
 	TileMap map1;
@@ -18,6 +19,8 @@ class A10_Game
 
 	boost::shared_ptr<MapWidget> map_widget;
 	std::map<string, TileSet*> tilesets;
+
+// ----------------- GAME LOGIC ------------------------------------------
 
 public:
 	A10_Game( Kernel& k );

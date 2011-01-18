@@ -1,16 +1,7 @@
 #ifndef TILE_MANAGER_HPP_INCLUDED
 #define TILE_MANAGER_HPP_INCLUDED
 
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <cassert>
-#include <cstring>
-
-#include <boost/lexical_cast.hpp>
-
-#include "tools/errorclass.hpp"
-
+#include "a10_common.hpp"
 #include "tile.hpp"
 
 typedef char TileCode;

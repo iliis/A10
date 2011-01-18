@@ -8,11 +8,12 @@
 class MapWidget : public Widget
 {
 	TileMap& map;
+	Vect delta;
 protected:
 	virtual	void	_set(ptree n){};
 	virtual	void 	_draw();
 public:
-	MapWidget(TileMap& _map, string name, Kernel* k) : Widget(name,k), map(_map) {};
+	MapWidget(TileMap& _map, string name, Kernel* k) : Widget(name,k), map(_map), delta(0,0) {};
 };
 
 #endif // MAP_WIDGET_HPP_INCLUDED
