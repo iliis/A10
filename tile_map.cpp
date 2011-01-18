@@ -20,30 +20,28 @@ TileMap::loadFromFile(string map_file_path, boost::function<TileSet*(string)> ti
 
 		string line;
 		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
-		this->width = boost::lexical_cast<int>(line);
+		this->size.x = boost::lexical_cast<int>(line);
 
 		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
-		this->height = boost::lexical_cast<int>(line);
+		this->size.y = boost::lexical_cast<int>(line);
 
-		if(this->width <= 0 or this->height <= 0)
+		if(this->size.x <= 0 or this->size.y <= 0)
 			throw Error("parse", "Invalid width/height in '"+map_file_path+"'.");
 
 		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
-		this->tile_w = boost::lexical_cast<int>(line);
+		this->tile_size.x = boost::lexical_cast<int>(line);
 
 		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
-		this->tile_h = boost::lexical_cast<int>(line);
+		this->tile_size.y = boost::lexical_cast<int>(line);
 
-		if(this->tile_w <= 0 or this->tile_h <= 0)
+		if(this->tile_size.x <= 0 or this->tile_size.y <= 0)
 			throw Error("parse", "Invalid tile-width/height in '"+map_file_path+"'.");
 
-		//this->data = vector< vector<Tile*> >(this->width, vector<Tile*>(this->height));
-		data = new Tile*  [width*height];
-		memset(data, NULL, width*height*sizeof(Tile*));
-		cout << "sizeof tile*: " << sizeof(Tile*) << "  w: " << width << "  h: " << height << endl;
+		data = new Tile*  [size.x*size.y];
+		setNULL(data, size.x*size.y);
 
 		char c=' '; int i=0;
-		while(map_file.good() and i < width*height)
+		while(map_file.good() and i < size.x*size.y)
 		{
 			map_file.get(c);
 			size_t code = c;
@@ -52,8 +50,8 @@ TileMap::loadFromFile(string map_file_path, boost::function<TileSet*(string)> ti
 			{
 				if(c == 'S') /// startpoint
 				{
-					this->start_pos.x = i % this->width;
-					this->start_pos.y = i / this->height;
+					this->start_pos.x = i % this->size.x;
+					this->start_pos.y = i / this->size.x;
 				}
 				else if(c == '1') /// enemy
 				{
@@ -94,18 +92,16 @@ TileMap::toMapCoords(ScreenCoords v)
 {
 	MapCoords result(0,0);
 
-	if (v.x >= width*tile_w)
-		result.x = width-1;
-	else if (v.x >= 0)
-		result.x = floor(v.x/tile_w);
+	for(int dim=1;dim<3;++dim)
+	{
+		if (v[dim] >= size[dim]*tile_size[dim])
+			result[dim] = size[dim]-1;
+		else if (v[dim] >= 0)
+			result[dim] = floor(v[dim] / tile_size[dim]);
+	}
 
-	if (v.y >= height*tile_h)
-		result.y = height-1;
-	else if (v.y >= 0)
-		result.y = floor(v.y/tile_h);
-
-	assert(result.x >= 0 and result.x < width);
-	assert(result.y >= 0 and result.y < height);
+	assert(result.x >= 0 and result.x < size.x);
+	assert(result.y >= 0 and result.y < size.y);
 
 	return result;
 };
@@ -115,16 +111,86 @@ TileMap::toScreenCoords(MapCoords v)
 {
 	ScreenCoords result(0,0);
 
-	if (v.x>width)
-		result.x = width*tile_w;
-	else if (v.x > 0)
-		result.x = v.x * tile_w;
-
-	if (v.y>height)
-		result.y = height*tile_h;
-	else if (v.y > 0)
-		result.y = v.y * tile_h;
+	for(int dim=1;dim<3;++dim)
+	{
+		if (v[dim]>size[dim])
+			result[dim] = size[dim]*tile_size[dim];
+		else if (v[dim] > 0)
+			result[dim] = v[dim]   *tile_size[dim];
+	}
 
 	return result;
+};
+//------------------------------------------------------------------------------
+bool
+TileMap::collides(CBox<double> box,  uint32_t flag)
+{
+	MapCoords topleft     = this->toMapCoords(box.center - box.extend);
+	MapCoords bottomright = this->toMapCoords(box.center + box.extend);
+
+	MapCoords xy(0,0);
+	for(xy.y = topleft.y; xy.y <= bottomright.y; ++xy.y)
+	for(xy.x = topleft.x; xy.x <= bottomright.x; ++xy.x)
+		if(this->collides(xy, flag)) return true;
+
+	return false;
+};
+//------------------------------------------------------------------------------
+bool
+TileMap::collides(CBoxEdge<double> edge, uint32_t flag)
+{
+	return this->collides(CBox<double>(edge), flag);
+};
+//------------------------------------------------------------------------------
+bool
+TileMap::collides(ScreenCoords point,    uint32_t flag)
+{
+	return this->collides(this->toMapCoords(point), flag);
+};
+//------------------------------------------------------------------------------
+bool
+TileMap::collides(MapCoords    point,    uint32_t flag)
+{
+	Tile* t = this->getData(point);
+
+	return (t and t->flags & flag)
+	     or point.x < 0
+	     or point.y < 0
+	     or point.x >= this->size.x
+	     or point.y >= this->size.y;
+};
+//------------------------------------------------------------------------------
+double
+TileMap::getDistToNearestBlock(CBoxEdge<double>& e, double maxdist, int dim, uint32_t flag)
+{
+	assert(valid_dim(dim));
+	assert(    (dim==1 and e.p1.y <= e.p2.y and e.p1.x == e.p2.x)
+			or (dim==2 and e.p1.x <= e.p2.x and e.p1.y == e.p2.y));
+	assert(maxdist != 0);
+
+	if(this->collides(e, flag)) return 0;
+
+	ScreenCoords tmp = e.p2;
+	tmp[dim] += maxdist;
+
+	MapCoords start = this->toMapCoords(e.p1),
+	          max   = this->toMapCoords(tmp), /// max is automatically bounded by map size
+	          pos   = start;
+
+	/// don't check first one, as there is certainly no collision (see a few lines up ;)
+	pos[dim] += sgn(maxdist);
+	for(; sgn(pos[dim] - max[dim]) != sgn(maxdist); pos[dim] += sgn(maxdist))
+	for(pos[3-dim] = start[3-dim]; pos[3-dim] <= max[3-dim]; ++pos[3-dim])
+	{
+		if(this->collides(pos, flag))
+		{
+			if(maxdist >= 0)
+				return (pos[dim]-start[dim])*this->tile_size[dim] - e.p1[dim] + (start[dim]  )*tile_size[dim];
+			else
+				return (pos[dim]-start[dim])*this->tile_size[dim] - e.p1[dim] + (start[dim]+1)*tile_size[dim];
+		}
+	}
+
+	return maxdist*10; ///< "no" collision
 };
 //------------------------------------------------------------------------------

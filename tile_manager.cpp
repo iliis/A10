@@ -7,7 +7,7 @@ TileSet::TileSet(boost::shared_ptr<GraphicsManager> gm) : gm(gm)
 {
 	assert(gm);
 
-	memset(tiles, NULL, sizeof tiles);
+	setNULL(tiles);
 	cout << "sizeof tiles: " << (sizeof tiles) << endl;
 };
 //------------------------------------------------------------------------------

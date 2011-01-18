@@ -2,9 +2,36 @@
 
 //------------------------------------------------------------------------------
 Creature::Creature()
- : shape(50,50,30,40)
+ : shape(100,50,15,20), speed(0,0), horiz_speed(500), jump_speed(800)
 {
 
+};
+//------------------------------------------------------------------------------
+Creature::Creature(CBox<double> _shape)
+ : shape(_shape), speed(0,0), horiz_speed(500), jump_speed(800)
+{
+
+};
+//------------------------------------------------------------------------------
+void
+Creature::setHorizMovement(int sgn)
+{
+	if(sgn > 0)
+		this->setXSpeed(this->horiz_speed);
+	else if(sgn < 0)
+		this->setXSpeed(-this->horiz_speed);
+	else
+		this->setXSpeed(0);
+};
+//------------------------------------------------------------------------------
+void
+Creature::jump()
+{
+	if (this->touching and this->speed.y <= 0)
+	{
+		this->speed.y  = -jump_speed;
+		this->touching = false;
+	}
 };
 //------------------------------------------------------------------------------
 void
@@ -50,8 +77,8 @@ Creature::move(double sec, TileMap& map)
 			CBoxEdge<double> tmpedge = shape.edgeX(speed.x);
 
 			/// otherwise we get collisions due to small errors:
-			tmpedge.p1.y += 0.1;
-			tmpedge.p2.y -= 0.1;
+			tmpedge.p1.y += 0.2;
+			tmpedge.p2.y -= 0.2;
 
 			double col_dist = map.getDistToNearestBlock(tmpedge, newpos.x-shape.center.x, 1, 1);
 
@@ -71,9 +98,10 @@ Creature::move(double sec, TileMap& map)
 
 			/// again, to counter small errors:
 			tmpedge.p1.x += 0.1;
-			tmpedge.p2.y -= 0.1;
+			tmpedge.p2.x -= 0.1;
 
 			double col_dist = map.getDistToNearestBlock(tmpedge, newpos.y-shape.center.y, 2, 1);
+			col_dist = col_dist;
 
 			if (Abs(col_dist) < Abs(newpos.y-shape.center.y))
 			{

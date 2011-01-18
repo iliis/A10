@@ -5,7 +5,7 @@
 			h=768
 			bpp=0
 			fullscreen="false"
-			maxFPS=100
+			maxFPS=60
 			doublebuf="false"
 			resizable="true"
 			background="#0d1e28" />

@@ -8,19 +8,22 @@
 #include "tile_manager.hpp"
 #include "tile_map.hpp"
 #include "map_widget.hpp"
+#include "creature.hpp"
 
 class A10_Game
 {
 // ---------------- IMPLEMENTATION --------------------------------------
 	void keyListener(KEY k, bool state);
 
-	TileMap map1;
 	Kernel& kernel;
 
 	boost::shared_ptr<MapWidget> map_widget;
 	std::map<string, TileSet*> tilesets;
 
 // ----------------- GAME LOGIC ------------------------------------------
+	TileMap map1;
+	Creature player;
+	int lives;
 
 public:
 	A10_Game( Kernel& k );
@@ -28,8 +31,15 @@ public:
 
 	inline void run(){this->kernel.run();};
 
+
+	void move_stuff(TimeVal delta);
+	void reset_player();
+
 	inline boost::shared_ptr<MapWidget> getMapWidget(){return this->map_widget;}
 	TileSet* getTileset(string path);
+
+	inline TileMap& getMainMap(){return this->map1;}
+	inline Creature& getPlayer(){return this->player;}
 };
 
 #endif // A10_GAME_HPP_INCLUDED
