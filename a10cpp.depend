@@ -6198,7 +6198,7 @@
 1294256769 source:/home/samuel/projects/cpp/anathea1.6/managers/animation_mgr.cpp
 	"animation_mgr.hpp"
 
-1295386118 /home/samuel/projects/cpp/anathea1.6/managers/animation_mgr.hpp
+1295451408 /home/samuel/projects/cpp/anathea1.6/managers/animation_mgr.hpp
 	<boost/function.hpp>
 	<boost/shared_ptr.hpp>
 	<boost/bind.hpp>
@@ -6238,7 +6238,7 @@
 1294231382 /home/samuel/projects/cpp/anathea1.6/managers/constraint_mgr.hpp
 	"widget.hpp"
 
-1294249150 /home/samuel/projects/cpp/anathea1.6/managers/widget.hpp
+1295440988 /home/samuel/projects/cpp/anathea1.6/managers/widget.hpp
 	<map>
 	<string>
 	<boost/shared_ptr.hpp>
@@ -6300,7 +6300,7 @@
 1294230956 /home/samuel/projects/cpp/A10/anathea/tools/ticpp/ticpprc.h
 	<vector>
 
-1294231382 /home/samuel/projects/cpp/A10/anathea/managers/definitions.hpp
+1295440480 /home/samuel/projects/cpp/A10/anathea/managers/definitions.hpp
 	<SDL.h>
 	<SDL_opengl.h>
 	"tools/geometry.hpp"
@@ -6330,7 +6330,7 @@
 	"managers/definitions.hpp"
 	"tools/shape.hpp"
 
-1295386118 /home/samuel/projects/cpp/A10/anathea/managers/animation_mgr.hpp
+1295451408 /home/samuel/projects/cpp/A10/anathea/managers/animation_mgr.hpp
 	<boost/function.hpp>
 	<boost/shared_ptr.hpp>
 	<boost/bind.hpp>
@@ -6344,7 +6344,7 @@
 	"managers/widget.hpp"
 	"managers/constraint_mgr.hpp"
 
-1294249150 /home/samuel/projects/cpp/A10/anathea/managers/widget.hpp
+1295440988 /home/samuel/projects/cpp/A10/anathea/managers/widget.hpp
 	<map>
 	<string>
 	<boost/shared_ptr.hpp>
@@ -6505,7 +6505,7 @@
 	"managers/definitions.hpp"
 	"tools/shape.hpp"
 
-1295388523 source:/home/samuel/projects/cpp/anathea1.6/managers/kernel.cpp
+1295451485 source:/home/samuel/projects/cpp/anathea1.6/managers/kernel.cpp
 	"managers/kernel.hpp"
 
 1294231382 source:/home/samuel/projects/cpp/anathea1.6/managers/sprite_mgr.cpp
@@ -6561,7 +6561,7 @@
 	<time.h>
 	<sys/time.h>
 
-1294249241 source:/home/samuel/projects/cpp/anathea1.6/managers/widget.cpp
+1295440942 source:/home/samuel/projects/cpp/anathea1.6/managers/widget.cpp
 	"managers/widget.hpp"
 	"managers/kernel.hpp"
 
@@ -6730,15 +6730,17 @@
 	"tinyxml.h"
 	<windows.h>
 
-1295385572 source:/home/samuel/projects/cpp/A10/a10_game.cpp
+1295451505 source:/home/samuel/projects/cpp/A10/a10_game.cpp
 	"a10_game.hpp"
 
-1295383076 /home/samuel/projects/cpp/A10/a10_game.hpp
+1295451089 /home/samuel/projects/cpp/A10/a10_game.hpp
 	<map>
 	"managers/kernel.hpp"
+	"managers/widget.hpp"
 	"tile_manager.hpp"
 	"tile_map.hpp"
 	"map_widget.hpp"
+	"health_widget.hpp"
 	"creature.hpp"
 
 1295367956 /home/samuel/projects/cpp/A10/tile_manager.hpp
@@ -6765,15 +6767,15 @@
 	"tile_manager.hpp"
 	"a10_common.hpp"
 
-1295383344 /home/samuel/projects/cpp/A10/map_widget.hpp
+1295451199 /home/samuel/projects/cpp/A10/map_widget.hpp
 	"managers/widget.hpp"
 	"tile_map.hpp"
 
-1295367956 source:/home/samuel/projects/cpp/A10/main.cpp
+1295450915 source:/home/samuel/projects/cpp/A10/main.cpp
 	<iostream>
 	"a10_game.hpp"
 
-1295389685 source:/home/samuel/projects/cpp/A10/map_widget.cpp
+1295451064 source:/home/samuel/projects/cpp/A10/map_widget.cpp
 	"map_widget.hpp"
 	"managers/kernel.hpp"
 	"a10_game.hpp"
@@ -6789,5 +6791,14 @@
 	"tile_map.hpp"
 
 1295389643 source:/home/samuel/projects/cpp/A10/tile_map.cpp
+	"tile_map.hpp"
+
+1295440321 source:/home/samuel/projects/cpp/A10/health_widget.cpp
+	"health_widget.hpp"
+	"managers/kernel.hpp"
+	"a10_game.hpp"
+
+1295440049 /home/samuel/projects/cpp/A10/health_widget.hpp
+	"managers/widget.hpp"
 	"tile_map.hpp"
 

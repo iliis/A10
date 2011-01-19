@@ -2,25 +2,28 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
 	<File name="anathea/managers/animation_mgr.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="2617" topLine="45" />
+		<Cursor position="2828" topLine="45" />
+	</File>
+	<File name="anathea/managers/definitions.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="312" topLine="9" />
 	</File>
 	<File name="anathea/managers/gui_mgr.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="0" topLine="32" />
 	</File>
-	<File name="anathea/managers/image_mgr.hpp" open="1" top="0" tabpos="10">
-		<Cursor position="7385" topLine="187" />
+	<File name="anathea/managers/image_mgr.hpp" open="0" top="0" tabpos="10">
+		<Cursor position="7385" topLine="184" />
 	</File>
 	<File name="anathea/managers/input_mgr.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="549" topLine="0" />
 	</File>
-	<File name="anathea/managers/kernel.hpp" open="1" top="1" tabpos="12">
+	<File name="anathea/managers/kernel.hpp" open="0" top="0" tabpos="12">
 		<Cursor position="1915" topLine="39" />
 	</File>
 	<File name="anathea/managers/widget.hpp" open="0" top="0" tabpos="12">
-		<Cursor position="552" topLine="6" />
+		<Cursor position="5626" topLine="103" />
 	</File>
 	<File name="anathea/managers/widgets/dialog_window.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="0" topLine="10" />
+		<Cursor position="1075" topLine="6" />
 	</File>
 	<File name="anathea/managers/widgets/label.hpp" open="0" top="0" tabpos="6">
 		<Cursor position="0" topLine="0" />
@@ -34,32 +37,38 @@
 	<File name="anathea/tools/misc.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="0" topLine="2" />
 	</File>
+	<File name="anathea/tools/shape.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="24" />
+	</File>
 	<File name="anathea/tools/stringhelpers.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="898" topLine="6" />
 	</File>
 	<File name="a10_common.hpp" open="0" top="0" tabpos="10">
 		<Cursor position="361" topLine="0" />
 	</File>
-	<File name="a10_game.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="2239" topLine="33" />
+	<File name="a10_game.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="3257" topLine="73" />
 	</File>
-	<File name="a10_game.hpp" open="1" top="0" tabpos="2">
-		<Cursor position="686" topLine="0" />
+	<File name="a10_game.hpp" open="1" top="1" tabpos="2">
+		<Cursor position="500" topLine="12" />
 	</File>
-	<File name="creature.cpp" open="1" top="0" tabpos="7">
+	<File name="creature.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="2727" topLine="73" />
 	</File>
-	<File name="creature.hpp" open="1" top="0" tabpos="6">
+	<File name="creature.hpp" open="0" top="0" tabpos="6">
 		<Cursor position="417" topLine="0" />
 	</File>
+	<File name="health_widget.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="679" topLine="0" />
+	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="159" topLine="0" />
+		<Cursor position="236" topLine="0" />
 	</File>
-	<File name="map_widget.cpp" open="1" top="0" tabpos="9">
-		<Cursor position="832" topLine="2" />
+	<File name="map_widget.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="453" topLine="9" />
 	</File>
-	<File name="map_widget.hpp" open="1" top="0" tabpos="8">
-		<Cursor position="471" topLine="0" />
+	<File name="map_widget.hpp" open="1" top="0" tabpos="3">
+		<Cursor position="434" topLine="0" />
 	</File>
 	<File name="tile.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="231" topLine="0" />
@@ -70,10 +79,10 @@
 	<File name="tile_manager.hpp" open="0" top="0" tabpos="6">
 		<Cursor position="96" topLine="0" />
 	</File>
-	<File name="tile_map.cpp" open="1" top="0" tabpos="5">
+	<File name="tile_map.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="5548" topLine="155" />
 	</File>
-	<File name="tile_map.hpp" open="1" top="0" tabpos="4">
+	<File name="tile_map.hpp" open="0" top="0" tabpos="4">
 		<Cursor position="1989" topLine="12" />
 	</File>
 </CodeBlocks_layout_file>

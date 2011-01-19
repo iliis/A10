@@ -11,7 +11,8 @@ int main(int argc, char** argv)
 		Kernel kernel(argc, argv);
 		kernel.init();
 
-		A10_Game game(kernel);
+		boost::shared_ptr<A10_Game> game = boost::shared_ptr<A10_Game>(new A10_Game(&kernel));
+		game->init();
 
 		kernel.run();
 

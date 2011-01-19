@@ -5,10 +5,10 @@
 			h=768
 			bpp=0
 			fullscreen="false"
-			maxFPS=60
+			maxFPS=100
 			doublebuf="false"
 			resizable="true"
-			background="#0d1e28" />
+			background="#023d34" />
 	
 	<styles sprites="xml/stylesheets/sprites.xml"
 			widgets="xml/stylesheets/widgets.xml" />
