@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="anathea/managers/animation_mgr.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="2828" topLine="45" />
+	<File name="anathea/managers/animation_mgr.hpp" open="1" top="0" tabpos="5">
+		<Cursor position="1409" topLine="15" />
 	</File>
 	<File name="anathea/managers/definitions.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="312" topLine="9" />
