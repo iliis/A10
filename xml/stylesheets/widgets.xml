@@ -2,15 +2,27 @@
 <style>
 
 	<bluebox w="200" h="100">
-		<caption size="20" font="fonts/Arial_Black.ttf" text_color="white" />
-		<normal  type="dynamic_image" path="images/blue_edge.png" all=20 />
-		<hover   type="dynamic_image" path="images/blue_edge.png" all=20 />
-		<pressed type="dynamic_image" path="images/blue_edge.png" all=20 />
+		<caption size="20" font="fonts/DINPro-Bold.otf" text_color="white" />
+		<normal  type="dynamic_image" path="gfx/gui/black_border_shadow.png" all=35 />
+		<hover   type="dynamic_image" path="gfx/gui/black_border_shadow.png" all=35 />
+		<pressed type="dynamic_image" path="gfx/gui/black_border_shadow.png" all=35 />
 	</bluebox>
 	
 	<button_box w=100 h=40>
 		<image_set path="images/buttons/box" ext=".png" />
 	</button_box>
+	
+	<button_black w=100 h=40>
+		<normal  type="dynamic_image" path="gfx/gui/black_border.png" all=35 />
+		<hover   type="dynamic_image" path="gfx/gui/black_border.png" all=35 />
+		<pressed type="dynamic_image" path="gfx/gui/black_border.png" all=35 />
+	</button_black>
+	
+	<button_red w=100 h=40>
+		<normal  type="dynamic_image" path="gfx/gui/red_border.png" all=35 />
+		<hover   type="dynamic_image" path="gfx/gui/red_border.png" all=35 />
+		<pressed type="dynamic_image" path="gfx/gui/red_border.png" all=35 />
+	</button_red>
 	
 	<button>
 		<caption size=12 />
@@ -18,12 +30,6 @@
 		<hover   type="box" border="#888" fill="#EEE" border_size=2 />
 		<pressed type="box" border="#333" fill="#888" border_size=1 />
 	</button>
-	
-	<button_dyn>
-		<normal  type="dynamic_image" path="images/buttons/close_normal.png"  all=20 />
-		<hover   type="dynamic_image" path="images/buttons/close_hover.png"   all=20 />
-		<pressed type="dynamic_image" path="images/buttons/close_pressed.png" all=20 />
-	</button_dyn>
 	
 	<button_close w=70 h=70>
 		<caption size=30 text_color="#FE0" />
@@ -41,12 +47,12 @@
 		<dyn_image_set path="images/buttons/button1" ext=".png" all=9 />
 	</button_round>
 	
-	<window title="a normal window" container_border=10 buttons_height=30 w=300 h=150>
-		<caption size=20 text_color="#111" font="fonts/adventpro-Lt1.ttf" />
-		<text text_color="#222" />
+	<window title="a normal window" container_border=30 buttons_height=70 w=800 h=700>
+		<caption size=25 text_color="#ccc" font="fonts/DINPro-Bold.otf" />
+		<text text_color="#ddd" size=18 />
 		<close_button style="button_close2" w=33 h=33 />
-		<background type="dynamic_image" path="images/greenedge.png" all=28 />
-		<title_bg   type="box" fill="#8D0" />
+		<background type="dynamic_image" path="gfx/gui/black_border_shadow.png" all=40 />
+		<title_bg   type="box" fill="#3330" />
 	</window>
 	
 	<darkBG>

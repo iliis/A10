@@ -79,6 +79,7 @@
 		<Unit filename="anathea/managers/sprites/SpriteLine.hpp" />
 		<Unit filename="anathea/managers/sprites/SpriteMultiImage.cpp" />
 		<Unit filename="anathea/managers/sprites/SpriteMultiImage.hpp" />
+		<Unit filename="anathea/managers/sprites/SpriteSkeleton.hpp" />
 		<Unit filename="anathea/managers/sprites/SpriteText.cpp" />
 		<Unit filename="anathea/managers/sprites/SpriteText.hpp" />
 		<Unit filename="anathea/managers/sprites/all_sprites.hpp" />
@@ -144,6 +145,7 @@
 		<Unit filename="tile_manager.hpp" />
 		<Unit filename="tile_map.cpp" />
 		<Unit filename="tile_map.hpp" />
+		<Unit filename="../anathea1.6/managers/sprites/SpriteSkeleton.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

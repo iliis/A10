@@ -1,14 +1,14 @@
 #include "creature.hpp"
 
 //------------------------------------------------------------------------------
-Creature::Creature()
- : shape(100,50,15,20), speed(0,0), horiz_speed(500), jump_speed(800)
+Creature::Creature(boost::shared_ptr<GraphicsManager> gmgr)
+ : skeleton(gmgr), shape(100,50,15,20), speed(0,0), horiz_speed(500), jump_speed(800), touching(false), health(100)
 {
 
 };
 //------------------------------------------------------------------------------
-Creature::Creature(CBox<double> _shape)
- : shape(_shape), speed(0,0), horiz_speed(500), jump_speed(800)
+Creature::Creature(boost::shared_ptr<GraphicsManager> gmgr, CBox<double> _shape)
+ : skeleton(gmgr), shape(_shape), speed(0,0), horiz_speed(500), jump_speed(800), touching(false), health(100)
 {
 
 };
@@ -138,5 +138,9 @@ Creature::swap_position(Creature& c)
 	swap(this->shape.center, c.shape.center);
 };
 //------------------------------------------------------------------------------
-
+void
+Creature::draw(vector2<double> delta)
+{
+	this->skeleton.draw((this->shape.center+delta).get<float>());
+};
 //------------------------------------------------------------------------------

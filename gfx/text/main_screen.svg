@@ -104,6 +104,18 @@
          stdDeviation="14.695774"
          id="feGaussianBlur4866" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3866"
+       x="-0.14909091"
+       width="1.2981818"
+       y="-0.14909091"
+       height="1.2981818">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.80303"
+         id="feGaussianBlur3868" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -112,18 +124,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="1097.8914"
-     inkscape:cy="347.63689"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-345.94674"
+     inkscape:cy="324.40375"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="1025"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="949"
+     inkscape:window-x="1680"
+     inkscape:window-y="25"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -481,5 +493,21 @@
            style="font-size:200px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ff1c1c;fill-opacity:1;stroke:none;font-family:DINPro;-inkscape-font-specification:DINPro Bold"
            id="tspan3969">A10</tspan></text>
     </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-opacity:1"
+       id="rect3042"
+       width="256"
+       height="256"
+       x="-670"
+       y="502.36218" />
+    <path
+       style="fill:#ff1c1c;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m -500,722.36218 -140,0 0,-190 190,0 0,140 z"
+       id="path3816"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/samuel/projects/cpp/A10/gfx/gui/red_border.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

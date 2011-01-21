@@ -5,6 +5,7 @@
 
 #include "managers/kernel.hpp"
 #include "managers/widget.hpp"
+#include "managers/widgets/all_widgets.hpp"
 
 #include "tile_manager.hpp"
 #include "tile_map.hpp"
@@ -21,6 +22,7 @@ class A10_Game : public Widget
 
 	boost::shared_ptr<MapWidget>    map_widget, mapf_widget;
 	boost::shared_ptr<HealthWidget> health_widget;
+	WidgetPtr start_screen, gameover_screen, died_screen;
 	std::map<string, TileSet*> tilesets;
 
 	TileMap map_foreground;
@@ -30,6 +32,8 @@ class A10_Game : public Widget
 	TileMap map1;
 	Creature player;
 	int lives;
+
+	bool paused;
 
 
 
@@ -49,6 +53,9 @@ public:
 	void move_stuff(TimeVal delta);
 	void reset_player();
 	void restart();
+
+	inline void start(){this->paused = false;}
+	inline void pause(){this->paused = true;}
 
 	inline boost::shared_ptr<MapWidget>    getMapWidget()   {return this->map_widget;}
 	inline boost::shared_ptr<HealthWidget> getHealthWidget(){return this->health_widget;}
