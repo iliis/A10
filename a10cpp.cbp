@@ -79,6 +79,7 @@
 		<Unit filename="anathea/managers/sprites/SpriteLine.hpp" />
 		<Unit filename="anathea/managers/sprites/SpriteMultiImage.cpp" />
 		<Unit filename="anathea/managers/sprites/SpriteMultiImage.hpp" />
+		<Unit filename="anathea/managers/sprites/SpriteSkeleton.cpp" />
 		<Unit filename="anathea/managers/sprites/SpriteSkeleton.hpp" />
 		<Unit filename="anathea/managers/sprites/SpriteText.cpp" />
 		<Unit filename="anathea/managers/sprites/SpriteText.hpp" />
@@ -100,6 +101,8 @@
 		<Unit filename="anathea/managers/widgets/draggable.hpp" />
 		<Unit filename="anathea/managers/widgets/label.cpp" />
 		<Unit filename="anathea/managers/widgets/label.hpp" />
+		<Unit filename="anathea/managers/widgets/skeleton_editor.cpp" />
+		<Unit filename="anathea/managers/widgets/skeleton_editor.hpp" />
 		<Unit filename="anathea/managers/widgets/widget_list.cpp" />
 		<Unit filename="anathea/managers/widgets/widget_list.hpp" />
 		<Unit filename="anathea/managers/widgets/widget_sprite.cpp" />
@@ -145,7 +148,6 @@
 		<Unit filename="tile_manager.hpp" />
 		<Unit filename="tile_map.cpp" />
 		<Unit filename="tile_map.hpp" />
-		<Unit filename="../anathea1.6/managers/sprites/SpriteSkeleton.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

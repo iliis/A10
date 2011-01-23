@@ -6,6 +6,7 @@
 #include "managers/kernel.hpp"
 #include "managers/widget.hpp"
 #include "managers/widgets/all_widgets.hpp"
+#include "managers/widgets/skeleton_editor.hpp"
 
 #include "tile_manager.hpp"
 #include "tile_map.hpp"
@@ -24,6 +25,8 @@ class A10_Game : public Widget
 	boost::shared_ptr<HealthWidget> health_widget;
 	WidgetPtr start_screen, gameover_screen, died_screen;
 	std::map<string, TileSet*> tilesets;
+
+	boost::shared_ptr<SkeletonEditorWidget> skedit_widget;
 
 	TileMap map_foreground;
 	Image bg1,bg2,bg3;

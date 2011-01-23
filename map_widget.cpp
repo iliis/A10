@@ -29,7 +29,7 @@ MapWidget::_draw()
 		CBox<double> pshape = game->getPlayer().shape;
 		pshape.center = pshape.center + delta;
 
-		this->kernel->graphicsMgr->drawBoxToScreen(box<double>(pshape.center - pshape.extend, pshape.extend*2).get<float>(), RED);
+		this->kernel->graphicsMgr->drawBoxToScreen(Box(pshape.center - pshape.extend, pshape.extend*2), RED);
 	}
 };
 //------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ MapWidget::setDelta(vector2<double> d)
 void
 MapWidget::setDeltaCenter(vector2<double> d)
 {
-	this->setDelta(d+this->size.get<double>()/2);
+	this->setDelta(d+this->size/2);
 };
 //------------------------------------------------------------------------------
 

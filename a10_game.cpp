@@ -11,13 +11,13 @@ A10_Game::A10_Game( Kernel* k )
 {
 	player.skeleton.setLineWidth(3);
 
-	Bone& m =
+	/*Bone& m =
 	player.skeleton.addBone(Bone(toRad( 90),8));
 	m.addBone(Bone(toRad( 70),10)).addBone(Bone(toRad(90),10));
 	m.addBone(Bone(toRad(110),10)).addBone(Bone(toRad(90),10));
 
 	player.skeleton.addBone(Bone(toRad( 60),10)).addBone(Bone(toRad(  80),10));
-	player.skeleton.addBone(Bone(toRad(120),10)).addBone(Bone(toRad( 100),10));
+	player.skeleton.addBone(Bone(toRad(120),10)).addBone(Bone(toRad( 100),10));*/
 };
 //------------------------------------------------------------------------------
 void
@@ -28,7 +28,7 @@ A10_Game::init()
 	kernel->inputMgr->addKeyListener(boost::bind(&A10_Game::keyListener, this, _1, _2));
 	kernel->setCalcFrameFunc        (boost::bind(&A10_Game::move_stuff,  this, _1));
 
-	setSize(this->kernel->graphicsMgr->getScreenSize().get<float>());
+	setSize(this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>());
 
 	start_screen = kernel->guiMgr->createWidget<WSprite>("start screen");
 	ptree pt = mkPtree("type", "image");
@@ -48,6 +48,8 @@ A10_Game::init()
 	died_screen->setAbsPos(this->size/2-died_screen->getSize()/2);
 	died_screen->hide();
 
+	skedit_widget = kernel->guiMgr->createWidget<SkeletonEditorWidget>("skeleton editor");
+
 
 	health_widget = boost::shared_ptr<HealthWidget>(new HealthWidget(this, "main health widget", this->kernel));
 	addChild(health_widget);
@@ -59,11 +61,11 @@ A10_Game::init()
 	map_widget = boost::shared_ptr<MapWidget>(new MapWidget(this, "main map widget", this->kernel));
 	map_widget->setMap(&this->map1);
 	map_widget->enableCreatures();
-	map_widget->setSize(this->kernel->graphicsMgr->getScreenSize().get<float>());
+	map_widget->setSize(this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>());
 
 	mapf_widget = boost::shared_ptr<MapWidget>(new MapWidget(this, "map foreground widget", this->kernel));
 	mapf_widget->setMap(&this->map_foreground);
-	mapf_widget->setSize(this->kernel->graphicsMgr->getScreenSize().get<float>());
+	mapf_widget->setSize(this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>());
 
 	addChild(mapf_widget);
 	addChild(map_widget);
@@ -88,9 +90,9 @@ A10_Game::draw()
 		if(this->isBoundingBoxEnabled())
 			this->kernel->graphicsMgr->drawBoxToScreen(this->getShape());
 
-		this->bg1.draw(this->map_widget->getDelta().get<float>()/Vect(4, 8));
-		this->bg2.draw(this->map_widget->getDelta().get<float>()/Vect(3, 6));
-		this->bg3.draw(this->map_widget->getDelta().get<float>()/Vect(2, 4));
+		this->bg1.draw(this->map_widget->getDelta()/Vect(4, 8));
+		this->bg2.draw(this->map_widget->getDelta()/Vect(3, 6));
+		this->bg3.draw(this->map_widget->getDelta()/Vect(2, 4));
 
 		this->drawChilds();
 	}

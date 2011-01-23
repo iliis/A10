@@ -38,10 +38,10 @@ public:
 
 	~TileMap();
 
-	double getDistToNearestBlock(CBoxEdge<double>& e, double maxdist, int dim, uint32_t flag);
+	FNumber getDistToNearestBlock(CBoxEdge<FNumber>& e, FNumber maxdist, int dim, uint32_t flag);
 
-	bool collides(CBox<double>    box,   uint32_t flag);
-	bool collides(CBoxEdge<double> edge, uint32_t flag);
+	bool collides(CBox<FNumber>    box,   uint32_t flag);
+	bool collides(CBoxEdge<FNumber> edge, uint32_t flag);
 	bool collides(ScreenCoords point,    uint32_t flag);
 	bool collides(MapCoords    point,    uint32_t flag);
 
@@ -56,7 +56,7 @@ public:
 	inline int   getPixelWidth() {return this->size.x*this->tile_size.x;}
 	inline int   getPixelHeight(){return this->size.y*this->tile_size.y;}
 
-	inline ScreenCoords getStartPosScr(){return this->toScreenCoords(this->start_pos)+(this->tile_size.get<double>()/2);}
+	inline ScreenCoords getStartPosScr(){return this->toScreenCoords(this->start_pos)+(this->tile_size.cast<Vect::T>()/2);}
 
 	MapCoords    toMapCoords(ScreenCoords v);
 	ScreenCoords toScreenCoords(MapCoords v);
