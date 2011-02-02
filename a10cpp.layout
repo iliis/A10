@@ -4,17 +4,17 @@
 	<File name="anathea/managers/animation_mgr.hpp" open="0" top="0" tabpos="5">
 		<Cursor position="1409" topLine="15" />
 	</File>
-	<File name="anathea/managers/constraint_mgr.hpp" open="0" top="0" tabpos="5">
-		<Cursor position="1426" topLine="10" />
+	<File name="anathea/managers/constraint_mgr.hpp" open="0" top="0" tabpos="7">
+		<Cursor position="279" topLine="0" />
 	</File>
-	<File name="anathea/managers/constraints.hpp" open="1" top="0" tabpos="2">
-		<Cursor position="1730" topLine="17" />
+	<File name="anathea/managers/constraints.hpp" open="0" top="0" tabpos="3">
+		<Cursor position="1978" topLine="36" />
 	</File>
 	<File name="anathea/managers/definitions.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="126" topLine="0" />
 	</File>
-	<File name="anathea/managers/gui_mgr.hpp" open="1" top="0" tabpos="8">
-		<Cursor position="2870" topLine="78" />
+	<File name="anathea/managers/gui_mgr.hpp" open="0" top="0" tabpos="2">
+		<Cursor position="2870" topLine="68" />
 	</File>
 	<File name="anathea/managers/image_mgr.hpp" open="0" top="0" tabpos="10">
 		<Cursor position="7385" topLine="184" />
@@ -22,7 +22,7 @@
 	<File name="anathea/managers/input_mgr.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="549" topLine="0" />
 	</File>
-	<File name="anathea/managers/kernel.hpp" open="0" top="0" tabpos="12">
+	<File name="anathea/managers/kernel.hpp" open="0" top="0" tabpos="15">
 		<Cursor position="124" topLine="0" />
 	</File>
 	<File name="anathea/managers/sprite_mgr.hpp" open="0" top="0" tabpos="0">
@@ -40,8 +40,11 @@
 	<File name="anathea/managers/sprites/SpriteSkeleton.hpp" open="0" top="0" tabpos="3">
 		<Cursor position="352" topLine="6" />
 	</File>
-	<File name="anathea/managers/widget.hpp" open="0" top="0" tabpos="12">
-		<Cursor position="3785" topLine="77" />
+	<File name="anathea/managers/widget.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="3894" topLine="84" />
+	</File>
+	<File name="anathea/managers/widgets/all_widgets.hpp" open="1" top="1" tabpos="3">
+		<Cursor position="177" topLine="0" />
 	</File>
 	<File name="anathea/managers/widgets/dialog_window.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="1075" topLine="12" />
@@ -56,7 +59,7 @@
 		<Cursor position="2145" topLine="50" />
 	</File>
 	<File name="anathea/tools/geometry.hpp" open="0" top="0" tabpos="11">
-		<Cursor position="10075" topLine="430" />
+		<Cursor position="719" topLine="0" />
 	</File>
 	<File name="anathea/tools/mathfuncs.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="4932" topLine="140" />
@@ -73,10 +76,10 @@
 	<File name="a10_common.hpp" open="0" top="0" tabpos="10">
 		<Cursor position="361" topLine="0" />
 	</File>
-	<File name="a10_game.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="2682" topLine="19" />
+	<File name="a10_game.cpp" open="0" top="0" tabpos="11">
+		<Cursor position="3922" topLine="90" />
 	</File>
-	<File name="a10_game.hpp" open="0" top="0" tabpos="2">
+	<File name="a10_game.hpp" open="0" top="0" tabpos="10">
 		<Cursor position="732" topLine="9" />
 	</File>
 	<File name="creature.cpp" open="0" top="0" tabpos="6">
@@ -85,16 +88,16 @@
 	<File name="creature.hpp" open="0" top="0" tabpos="5">
 		<Cursor position="709" topLine="0" />
 	</File>
-	<File name="health_widget.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="679" topLine="0" />
+	<File name="health_widget.cpp" open="0" top="0" tabpos="12">
+		<Cursor position="601" topLine="0" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="265" topLine="0" />
+		<Cursor position="220" topLine="0" />
 	</File>
-	<File name="map_widget.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="1640" topLine="16" />
+	<File name="map_widget.cpp" open="0" top="0" tabpos="13">
+		<Cursor position="565" topLine="4" />
 	</File>
-	<File name="map_widget.hpp" open="0" top="0" tabpos="3">
+	<File name="map_widget.hpp" open="0" top="0" tabpos="14">
 		<Cursor position="434" topLine="0" />
 	</File>
 	<File name="tile.hpp" open="0" top="0" tabpos="0">

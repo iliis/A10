@@ -34,18 +34,18 @@ A10_Game::init()
 	ptree pt = mkPtree("type", "image");
 	pt.put("path", "gfx/text/start.png");
 	start_screen->set(pt);
-	start_screen->setAbsPos(this->size/2-start_screen->getSize()/2);
+	start_screen->setAbsPos(this->getSize()/2-start_screen->getSize()/2);
 
 	gameover_screen = kernel->guiMgr->createWidget<WSprite>("gameover screen");
 	pt.put("path","gfx/text/gameover.png");
 	gameover_screen->set(pt);
-	gameover_screen->setAbsPos(this->size/2-gameover_screen->getSize()/2);
+	gameover_screen->setAbsPos(this->getSize()/2-gameover_screen->getSize()/2);
 	gameover_screen->hide();
 
 	died_screen = kernel->guiMgr->createWidget<WSprite>("died screen");
 	pt.put("path","gfx/text/died.png");
 	died_screen->set(pt);
-	died_screen->setAbsPos(this->size/2-died_screen->getSize()/2);
+	died_screen->setAbsPos(this->getSize()/2-died_screen->getSize()/2);
 	died_screen->hide();
 
 	skedit_widget = kernel->guiMgr->createWidget<SkeletonEditorWidget>("skeleton editor");
@@ -61,11 +61,13 @@ A10_Game::init()
 	map_widget = boost::shared_ptr<MapWidget>(new MapWidget(this, "main map widget", this->kernel));
 	map_widget->setMap(&this->map1);
 	map_widget->enableCreatures();
-	map_widget->setSize(this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>());
+	map_widget->setSize(this->getSize());
+
+	cout << "map size: " << map_widget->getSize().print() << endl;
 
 	mapf_widget = boost::shared_ptr<MapWidget>(new MapWidget(this, "map foreground widget", this->kernel));
 	mapf_widget->setMap(&this->map_foreground);
-	mapf_widget->setSize(this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>());
+	mapf_widget->setSize(this->getSize());
 
 	addChild(mapf_widget);
 	addChild(map_widget);

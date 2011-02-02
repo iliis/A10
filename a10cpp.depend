@@ -6344,7 +6344,7 @@
 	"managers/widget.hpp"
 	"managers/constraint_mgr.hpp"
 
-1295818335 /home/samuel/projects/cpp/A10/anathea/managers/widget.hpp
+1295911354 /home/samuel/projects/cpp/A10/anathea/managers/widget.hpp
 	<map>
 	<string>
 	<boost/shared_ptr.hpp>
@@ -6355,12 +6355,15 @@
 	"managers/definitions.hpp"
 	"managers/input_mgr.hpp"
 	"managers/animation_mgr.hpp"
+	"managers/constraint_mgr.hpp"
 
-1295812476 /home/samuel/projects/cpp/A10/anathea/managers/constraint_mgr.hpp
+1295911897 /home/samuel/projects/cpp/A10/anathea/managers/constraint_mgr.hpp
 	<list>
 	<boost/shared_ptr.hpp>
 	<boost/enable_shared_from_this.hpp>
 	<boost/function.hpp>
+	<boost/bind.hpp>
+	<boost/signals.hpp>
 	"tools/slots.hpp"
 
 1295368493 source:/home/samuel/projects/cpp/anathea1.6/managers/gui_mgr.cpp
@@ -6439,7 +6442,7 @@
 1295794069 /home/samuel/projects/cpp/A10/anathea/managers/sprites/SpriteMultiImage.hpp
 	"managers/sprites/SpriteImage.hpp"
 
-1295817359 /home/samuel/projects/cpp/A10/anathea/managers/constraints.hpp
+1295911194 /home/samuel/projects/cpp/A10/anathea/managers/constraints.hpp
 	"managers/widget.hpp"
 	"managers/constraint_mgr.hpp"
 
@@ -6735,7 +6738,7 @@
 	"tinyxml.h"
 	<windows.h>
 
-1295798481 source:/home/samuel/projects/cpp/A10/a10_game.cpp
+1295912321 source:/home/samuel/projects/cpp/A10/a10_game.cpp
 	"a10_game.hpp"
 
 1295631699 /home/samuel/projects/cpp/A10/a10_game.hpp
@@ -6778,11 +6781,11 @@
 	"managers/widget.hpp"
 	"tile_map.hpp"
 
-1295815358 source:/home/samuel/projects/cpp/A10/main.cpp
+1295957329 source:/home/samuel/projects/cpp/A10/main.cpp
 	<iostream>
 	"a10_game.hpp"
 
-1295797534 source:/home/samuel/projects/cpp/A10/map_widget.cpp
+1295912292 source:/home/samuel/projects/cpp/A10/map_widget.cpp
 	"map_widget.hpp"
 	"managers/kernel.hpp"
 	"a10_game.hpp"
@@ -6801,7 +6804,7 @@
 1295389643 source:/home/samuel/projects/cpp/A10/tile_map.cpp
 	"tile_map.hpp"
 
-1295440321 source:/home/samuel/projects/cpp/A10/health_widget.cpp
+1295911994 source:/home/samuel/projects/cpp/A10/health_widget.cpp
 	"health_widget.hpp"
 	"managers/kernel.hpp"
 	"a10_game.hpp"
@@ -6855,14 +6858,16 @@
 	"managers/time_mgr.hpp"
 	<iostream>
 
-1295800496 source:/home/samuel/projects/cpp/anathea1.7/managers/constraint_mgr.cpp
+1295911039 source:/home/samuel/projects/cpp/anathea1.7/managers/constraint_mgr.cpp
 	"constraint_mgr.hpp"
 
-1295812476 /home/samuel/projects/cpp/anathea1.7/managers/constraint_mgr.hpp
+1295911897 /home/samuel/projects/cpp/anathea1.7/managers/constraint_mgr.hpp
 	<list>
 	<boost/shared_ptr.hpp>
 	<boost/enable_shared_from_this.hpp>
 	<boost/function.hpp>
+	<boost/bind.hpp>
+	<boost/signals.hpp>
 	"tools/slots.hpp"
 
 1295794069 /home/samuel/projects/cpp/anathea1.7/managers/widget.hpp
@@ -6877,10 +6882,10 @@
 	"managers/input_mgr.hpp"
 	"managers/animation_mgr.hpp"
 
-1295818369 source:/home/samuel/projects/cpp/anathea1.7/managers/constraints.cpp
+1295911517 source:/home/samuel/projects/cpp/anathea1.7/managers/constraints.cpp
 	"constraints.hpp"
 
-1295817359 /home/samuel/projects/cpp/anathea1.7/managers/constraints.hpp
+1295911194 /home/samuel/projects/cpp/anathea1.7/managers/constraints.hpp
 	"managers/widget.hpp"
 	"managers/constraint_mgr.hpp"
 
@@ -6977,7 +6982,7 @@
 	<time.h>
 	<sys/time.h>
 
-1295814944 source:/home/samuel/projects/cpp/anathea1.7/managers/widget.cpp
+1295911781 source:/home/samuel/projects/cpp/anathea1.7/managers/widget.cpp
 	"managers/widget.hpp"
 	"managers/kernel.hpp"
 
@@ -7007,7 +7012,7 @@
 1295794069 /home/samuel/projects/cpp/anathea1.7/managers/widgets/container.hpp
 	"managers/widget.hpp"
 
-1295815997 source:/home/samuel/projects/cpp/anathea1.7/managers/widgets/dialog_window.cpp
+1295911859 source:/home/samuel/projects/cpp/anathea1.7/managers/widgets/dialog_window.cpp
 	"dialog_window.hpp"
 	"managers/kernel.hpp"
 
@@ -7040,7 +7045,7 @@
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
-1295818944 source:/home/samuel/projects/cpp/anathea1.7/managers/widgets/widget_list.cpp
+1295911939 source:/home/samuel/projects/cpp/anathea1.7/managers/widgets/widget_list.cpp
 	"widget_list.hpp"
 	"managers/kernel.hpp"
 

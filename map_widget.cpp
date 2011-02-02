@@ -14,8 +14,8 @@ MapWidget::_draw()
 {
 	assert(this->map);
 
-	for(int y=max(-delta.y/this->map->getTileH()-2, 0.0); y<this->map->getHeight() and y<(-delta.y+this->size.y)/this->map->getTileH(); ++y)
-	for(int x=max(-delta.x/this->map->getTileW()-2, 0.0); x<this->map->getWidth()  and x<(-delta.x+this->size.x)/this->map->getTileW(); ++x)
+	for(int y=max(-delta.y/this->map->getTileH()-2, 0.0); y<this->map->getHeight() and y<(-delta.y+this->getHeight())/this->map->getTileH(); ++y)
+	for(int x=max(-delta.x/this->map->getTileW()-2, 0.0); x<this->map->getWidth()  and x<(-delta.x+this->getWidth() )/this->map->getTileW(); ++x)
 	{
 		Tile* t = this->map->getData(x,y);
 
@@ -40,8 +40,8 @@ MapWidget::setDelta(vector2<double> d)
 	{
 		if (d[dim] > 0)
 			d[dim] = 0;
-		else if(d[dim] < this->size[dim]-this->map->getPixelSize(dim))
-			    d[dim] = this->size[dim]-this->map->getPixelSize(dim);
+		else if(d[dim] < this->getSize(dim)-this->map->getPixelSize(dim))
+			    d[dim] = this->getSize(dim)-this->map->getPixelSize(dim);
 	}
 
 	this->delta = d;
@@ -50,7 +50,7 @@ MapWidget::setDelta(vector2<double> d)
 void
 MapWidget::setDeltaCenter(vector2<double> d)
 {
-	this->setDelta(d+this->size/2);
+	this->setDelta(d+this->getSize()/2);
 };
 //------------------------------------------------------------------------------
 

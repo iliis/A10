@@ -4,6 +4,14 @@
 
 using namespace std;
 
+void close_on_esc(KEY key, bool state, Kernel* k)
+{
+	assert(k);
+
+	if(key == KEY_ESCAPE and state)
+		k->stop();
+}
+
 int main(int argc, char** argv)
 {
 	try
@@ -11,8 +19,10 @@ int main(int argc, char** argv)
 		Kernel kernel(argc, argv);
 		kernel.init();
 
-		boost::shared_ptr<A10_Game> game = boost::shared_ptr<A10_Game>(new A10_Game(&kernel));
-		game->init();
+		kernel.inputMgr->addKeyListener(boost::bind(close_on_esc, _1, _2, &kernel));
+
+		//boost::shared_ptr<A10_Game> game = boost::shared_ptr<A10_Game>(new A10_Game(&kernel));
+		//game->init();
 
 		kernel.run();
 
