@@ -141,6 +141,6 @@ Creature::swap_position(Creature& c)
 void
 Creature::draw(vector2<double> delta)
 {
-	this->skeleton.draw(this->shape.center+delta);
+	this->skeleton.draw(this->shape.center+delta+this->skeleton_delta);
 };
 //------------------------------------------------------------------------------

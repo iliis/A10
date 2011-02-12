@@ -11,13 +11,14 @@ A10_Game::A10_Game( Kernel* k )
 {
 	player.skeleton.setLineWidth(3);
 
-	/*Bone& m =
+	Bone& m =
 	player.skeleton.addBone(Bone(toRad( 90),8));
 	m.addBone(Bone(toRad( 70),10)).addBone(Bone(toRad(90),10));
 	m.addBone(Bone(toRad(110),10)).addBone(Bone(toRad(90),10));
 
 	player.skeleton.addBone(Bone(toRad( 60),10)).addBone(Bone(toRad(  80),10));
-	player.skeleton.addBone(Bone(toRad(120),10)).addBone(Bone(toRad( 100),10));*/
+	player.skeleton.addBone(Bone(toRad(120),10)).addBone(Bone(toRad( 100),10));
+	player.skeleton_delta = Vect(0,-8);
 };
 //------------------------------------------------------------------------------
 void
@@ -35,6 +36,8 @@ A10_Game::init()
 	pt.put("path", "gfx/text/start.png");
 	start_screen->set(pt);
 	start_screen->setAbsPos(this->getSize()/2-start_screen->getSize()/2);
+
+	cout << "start_screen: " << start_screen->getSize().print() << endl;
 
 	gameover_screen = kernel->guiMgr->createWidget<WSprite>("gameover screen");
 	pt.put("path","gfx/text/gameover.png");
@@ -109,7 +112,7 @@ A10_Game::keyListener(KEY k, bool state)
 	if(state and paused)
 	{
 		this->start();
-		this->start_screen->hide();
+		this->start_screen->fadeOut(0.5);
 		this->gameover_screen->hide();
 		this->died_screen->hide();
 

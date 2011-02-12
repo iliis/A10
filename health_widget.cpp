@@ -16,7 +16,7 @@ void
 HealthWidget::_draw()
 {
 	Vect pos    = this->getAbsPos();
-	     pos.x += this->width();
+	     pos.x += this->getWidth();
 
 	for(int i=0; i<this->game->getPlayerLives(); ++i)
 	{

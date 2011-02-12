@@ -10,7 +10,7 @@ struct Creature
 {
 	SpriteSkeleton  skeleton;
 	CBox<double>    shape;
-	vector2<double> speed;
+	vector2<double> speed, skeleton_delta;
 	double horiz_speed, jump_speed;
 
 	bool touching;
