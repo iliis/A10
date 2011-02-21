@@ -26,8 +26,6 @@ class A10_Game : public Widget
 	boost::shared_ptr<WSprite> start_screen, gameover_screen, died_screen;
 	std::map<string, TileSet*> tilesets;
 
-	boost::shared_ptr<SkeletonEditorWidget> skedit_widget;
-
 	TileMap map_foreground;
 	Image bg1,bg2,bg3;
 

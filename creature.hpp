@@ -9,6 +9,8 @@
 struct Creature
 {
 	SpriteSkeleton  skeleton;
+	list<SkeletonKeyframe> anim_standing, anim_running_left, anim_running_right;
+
 	CBox<double>    shape;
 	vector2<double> speed, skeleton_delta;
 	double horiz_speed, jump_speed;

@@ -16,8 +16,8 @@
 	<File name="anathea/managers/gui_mgr.hpp" open="0" top="0" tabpos="2">
 		<Cursor position="3091" topLine="67" />
 	</File>
-	<File name="anathea/managers/image_mgr.hpp" open="0" top="0" tabpos="10">
-		<Cursor position="1867" topLine="36" />
+	<File name="anathea/managers/image_mgr.hpp" open="1" top="0" tabpos="6">
+		<Cursor position="2715" topLine="39" />
 	</File>
 	<File name="anathea/managers/input_mgr.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="326" topLine="0" />
@@ -38,7 +38,7 @@
 		<Cursor position="65" topLine="0" />
 	</File>
 	<File name="anathea/managers/sprites/SpriteSkeleton.hpp" open="1" top="0" tabpos="2">
-		<Cursor position="527" topLine="0" />
+		<Cursor position="1022" topLine="69" />
 	</File>
 	<File name="anathea/managers/widget.hpp" open="0" top="0" tabpos="6">
 		<Cursor position="5999" topLine="107" />
@@ -53,7 +53,7 @@
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="anathea/managers/widgets/skeleton_editor.hpp" open="1" top="0" tabpos="4">
-		<Cursor position="487" topLine="0" />
+		<Cursor position="604" topLine="11" />
 	</File>
 	<File name="anathea/managers/widgets/widget_list.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="453" topLine="0" />
@@ -68,7 +68,7 @@
 		<Cursor position="12629" topLine="471" />
 	</File>
 	<File name="anathea/tools/mathfuncs.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="4932" topLine="0" />
+		<Cursor position="1409" topLine="9" />
 	</File>
 	<File name="anathea/tools/misc.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="1469" topLine="0" />

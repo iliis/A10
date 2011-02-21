@@ -12,8 +12,28 @@ void close_on_esc(KEY key, bool state, Kernel* k)
 		k->stop();
 }
 
+class Foo
+{
+public:
+	int val;
+
+	Foo(int i) : val(i) {};
+};
+
+class Bar
+{
+	Foo f;
+public:
+	Bar() : f(42) {};
+
+	void set(){this->f = Foo(123);}
+};
+
 int main(int argc, char** argv)
 {
+	Bar b;
+	b.set();
+
 	try
 	{
 		Kernel kernel(argc, argv);
@@ -21,11 +41,11 @@ int main(int argc, char** argv)
 
 		kernel.inputMgr->addKeyListener(boost::bind(close_on_esc, _1, _2, &kernel));
 
-		WidgetPtr skedit = kernel.guiMgr->createWidget<SkeletonEditorWidget>("sk_editor");
-		skedit->setSize(kernel.graphicsMgr->getScreenSize().cast<double>());
+		//WidgetPtr skedit = kernel.guiMgr->createWidget<SkeletonEditorWidget>("sk_editor");
+		//skedit->setSize(kernel.graphicsMgr->getScreenSize().cast<double>());
 
-		//boost::shared_ptr<A10_Game> game = boost::shared_ptr<A10_Game>(new A10_Game(&kernel));
-		//game->init();
+		boost::shared_ptr<A10_Game> game = boost::shared_ptr<A10_Game>(new A10_Game(&kernel));
+		game->init();
 
 		kernel.run();
 

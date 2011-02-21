@@ -9,16 +9,14 @@ A10_Game::A10_Game( Kernel* k )
 	   player(k->graphicsMgr),
 	   lives(MAX_LIVES), paused(true)
 {
+	player.skeleton.loadFromFile("skeletons/player.skt");
 	player.skeleton.setLineWidth(3);
-
-	Bone& m =
-	player.skeleton.addBone(Bone(toRad( 90),8));
-	m.addBone(Bone(toRad( 70),10)).addBone(Bone(toRad(90),10));
-	m.addBone(Bone(toRad(110),10)).addBone(Bone(toRad(90),10));
-
-	player.skeleton.addBone(Bone(toRad( 60),10)).addBone(Bone(toRad(  80),10));
-	player.skeleton.addBone(Bone(toRad(120),10)).addBone(Bone(toRad( 100),10));
 	player.skeleton_delta = Vect(0,-8);
+	player.skeleton.setScale(0.05);
+
+	player.anim_running_left  = load_sk_animation(player.skeleton, "animations/player_running_left.ska");
+	player.anim_running_right = load_sk_animation(player.skeleton, "animations/player_running_right.ska");
+	player.anim_standing      = load_sk_animation(player.skeleton, "animations/player_standing.ska");
 };
 //------------------------------------------------------------------------------
 void
@@ -51,7 +49,7 @@ A10_Game::init()
 	died_screen->setAbsPos(this->getSize()/2-died_screen->getSize()/2);
 	died_screen->hide();
 
-	skedit_widget = kernel->guiMgr->createWidget<SkeletonEditorWidget>("skeleton editor");
+	//skedit_widget = kernel->guiMgr->createWidget<SkeletonEditorWidget>("skeleton editor");
 
 
 	health_widget = boost::shared_ptr<HealthWidget>(new HealthWidget(this, "main health widget", this->kernel));

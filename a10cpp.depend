@@ -6212,7 +6212,7 @@
 	<time.h>
 	<sys/time.h>
 
-1295799727 /home/samuel/projects/cpp/A10/anathea/tools/stringhelpers.hpp
+1297533454 /home/samuel/projects/cpp/A10/anathea/tools/stringhelpers.hpp
 	<stdio.h>
 	<string>
 	<sstream>
@@ -6220,7 +6220,7 @@
 	<boost/algorithm/string.hpp>
 	"tools/mathfuncs.hpp"
 
-1297522104 /home/samuel/projects/cpp/A10/anathea/tools/mathfuncs.hpp
+1298223677 /home/samuel/projects/cpp/A10/anathea/tools/mathfuncs.hpp
 	<list>
 	<math.h>
 	<stdio.h>
@@ -6409,7 +6409,7 @@
 	"tools/slots.hpp"
 	<boost/property_tree/ptree.hpp>
 
-1297524605 /home/samuel/projects/cpp/A10/anathea/managers/image_mgr.hpp
+1298205809 /home/samuel/projects/cpp/A10/anathea/managers/image_mgr.hpp
 	<string.h>
 	<list>
 	<boost/shared_ptr.hpp>
@@ -6735,10 +6735,10 @@
 	"tinyxml.h"
 	<windows.h>
 
-1297440093 source:/home/samuel/projects/cpp/A10/a10_game.cpp
+1298284846 source:/home/samuel/projects/cpp/A10/a10_game.cpp
 	"a10_game.hpp"
 
-1297438670 /home/samuel/projects/cpp/A10/a10_game.hpp
+1298284382 /home/samuel/projects/cpp/A10/a10_game.hpp
 	<map>
 	"managers/kernel.hpp"
 	"managers/widget.hpp"
@@ -6778,7 +6778,7 @@
 	"managers/widget.hpp"
 	"tile_map.hpp"
 
-1297509091 source:/home/samuel/projects/cpp/A10/main.cpp
+1298285003 source:/home/samuel/projects/cpp/A10/main.cpp
 	<iostream>
 	"a10_game.hpp"
 
@@ -6793,7 +6793,7 @@
 1297440045 source:/home/samuel/projects/cpp/A10/creature.cpp
 	"creature.hpp"
 
-1297440038 /home/samuel/projects/cpp/A10/creature.hpp
+1298284401 /home/samuel/projects/cpp/A10/creature.hpp
 	"managers/sprites/SpriteSkeleton.hpp"
 	"a10_common.hpp"
 	"tile_map.hpp"
@@ -6810,13 +6810,17 @@
 	"managers/widget.hpp"
 	"tile_map.hpp"
 
-1297524079 /home/samuel/projects/cpp/A10/anathea/managers/sprites/SpriteSkeleton.hpp
+1298284802 /home/samuel/projects/cpp/A10/anathea/managers/sprites/SpriteSkeleton.hpp
 	<list>
 	<map>
 	<string>
+	<iostream>
+	<fstream>
 	<boost/foreach.hpp>
+	<boost/lexical_cast.hpp>
 	"managers/sprite_mgr.hpp"
 	"tools/mathfuncs.hpp"
+	"tools/stringhelpers.hpp"
 
 1295537715 source:/home/samuel/projects/cpp/anathea1.6/managers/sprites/SpriteSkeleton.cpp
 	"SpriteSkeleton.hpp"
@@ -6844,7 +6848,7 @@
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
-1297524391 /home/samuel/projects/cpp/A10/anathea/managers/widgets/skeleton_editor.hpp
+1298282577 /home/samuel/projects/cpp/A10/anathea/managers/widgets/skeleton_editor.hpp
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
@@ -6893,13 +6897,13 @@
 	"managers/gui_mgr.hpp"
 	"managers/kernel.hpp"
 
-1297524671 source:/home/samuel/projects/cpp/anathea1.7/managers/image_mgr.cpp
+1298205873 source:/home/samuel/projects/cpp/anathea1.7/managers/image_mgr.cpp
 	"image_mgr.hpp"
 	"tools/stringhelpers.hpp"
 	<iostream>
 	"managers/definitions.hpp"
 
-1297524605 /home/samuel/projects/cpp/anathea1.7/managers/image_mgr.hpp
+1298205809 /home/samuel/projects/cpp/anathea1.7/managers/image_mgr.hpp
 	<string.h>
 	<list>
 	<boost/shared_ptr.hpp>
@@ -6956,16 +6960,20 @@
 1295980053 source:/home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteMultiImage.cpp
 	"managers/sprites/SpriteMultiImage.hpp"
 
-1297524766 source:/home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteSkeleton.cpp
+1298284987 source:/home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteSkeleton.cpp
 	"SpriteSkeleton.hpp"
 
-1297524079 /home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteSkeleton.hpp
+1298284802 /home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteSkeleton.hpp
 	<list>
 	<map>
 	<string>
+	<iostream>
+	<fstream>
 	<boost/foreach.hpp>
+	<boost/lexical_cast.hpp>
 	"managers/sprite_mgr.hpp"
 	"tools/mathfuncs.hpp"
+	"tools/stringhelpers.hpp"
 
 1295980086 source:/home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteText.cpp
 	"SpriteText.hpp"
@@ -7041,11 +7049,11 @@
 	"managers/widget.hpp"
 	"managers/sprites/SpriteText.hpp"
 
-1297525173 source:/home/samuel/projects/cpp/anathea1.7/managers/widgets/skeleton_editor.cpp
+1298284766 source:/home/samuel/projects/cpp/anathea1.7/managers/widgets/skeleton_editor.cpp
 	"skeleton_editor.hpp"
 	"managers/kernel.hpp"
 
-1297524391 /home/samuel/projects/cpp/anathea1.7/managers/widgets/skeleton_editor.hpp
+1298282577 /home/samuel/projects/cpp/anathea1.7/managers/widgets/skeleton_editor.hpp
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
@@ -7085,7 +7093,7 @@
 1297521999 source:/home/samuel/projects/cpp/anathea1.7/tools/mathfuncs.cpp
 	"mathfuncs.hpp"
 
-1297522104 /home/samuel/projects/cpp/anathea1.7/tools/mathfuncs.hpp
+1298223677 /home/samuel/projects/cpp/anathea1.7/tools/mathfuncs.hpp
 	<list>
 	<math.h>
 	<stdio.h>
@@ -7109,7 +7117,7 @@
 	"tools/geometry.hpp"
 	"managers/definitions.hpp"
 
-1295794067 source:/home/samuel/projects/cpp/anathea1.7/tools/stringhelpers.cpp
+1297533469 source:/home/samuel/projects/cpp/anathea1.7/tools/stringhelpers.cpp
 	"tools/stringhelpers.hpp"
 	<iostream>
 
