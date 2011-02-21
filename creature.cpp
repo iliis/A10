@@ -1,14 +1,12 @@
 #include "creature.hpp"
 
-//------------------------------------------------------------------------------
-Creature::Creature(boost::shared_ptr<GraphicsManager> gmgr)
- : skeleton(gmgr), shape(100,50,15,20), speed(0,0), horiz_speed(500), jump_speed(800), touching(false), health(100)
-{
+const double ANIM_SPEED_FACTOR = 5; /// higher = faster
 
-};
 //------------------------------------------------------------------------------
 Creature::Creature(boost::shared_ptr<GraphicsManager> gmgr, CBox<double> _shape)
- : skeleton(gmgr), shape(_shape), speed(0,0), horiz_speed(500), jump_speed(800), touching(false), health(100)
+ : graphicsMgr(gmgr), skeleton(gmgr),
+   active_anim(&anim_standing), active_kf(0.1), next_kf(anim_standing.begin()), frame_age(0),
+   shape(_shape), speed(0,0), horiz_speed(500), jump_speed(800), touching(false), health(100)
 {
 
 };
@@ -113,6 +111,47 @@ Creature::move(double sec, TileMap& map)
 		}
 
 		shape.center = newpos;
+
+
+		if(this->speed.x > 0) /// going right
+			this->set_current_animation(this->anim_running_right);
+		else if(this->speed.x < 0) /// going left
+			this->set_current_animation(this->anim_running_left);
+		else /// not going anywhere
+			this->set_current_animation(this->anim_standing);
+
+		/// ANIMATION
+		//----------------------------------------------------------------------
+		if(this->active_anim)
+		{
+			assert(this->active_anim->size() > 1);
+			if(this->next_kf == this->active_anim->end()) this->next_kf = this->active_anim->begin();
+
+			this->frame_age += fromSeconds(sec)*ANIM_SPEED_FACTOR;
+			while(this->frame_age >= fromSeconds(this->active_kf.duration))
+			{
+				this->frame_age -= fromSeconds(this->active_kf.duration);
+				this->active_kf  = *this->next_kf;
+				++this->next_kf;
+				if(this->next_kf == this->active_anim->end()) this->next_kf = this->active_anim->begin();
+			}
+
+			this->active_kf.apply_interpolated(toSeconds(this->frame_age) / this->active_kf.duration, *this->next_kf);
+		}
+	}
+};
+//------------------------------------------------------------------------------
+void
+Creature::set_current_animation(list<SkeletonKeyframe>& anim)
+{
+	assert(anim.size() > 1);
+
+	if(&anim != this->active_anim)
+	{
+		this->active_kf   = SkeletonKeyframe(this->skeleton, 0.5);
+		this->active_anim = &anim;
+		this->next_kf     = anim.begin();
+		this->frame_age   = 0;
 	}
 };
 //------------------------------------------------------------------------------
@@ -142,5 +181,8 @@ void
 Creature::draw(vector2<double> delta)
 {
 	this->skeleton.draw(this->shape.center+delta+this->skeleton_delta);
+
+	/// bounding box:
+	//this->graphicsMgr->drawBoxToScreen(Box(this->shape.center - this->shape.extend+delta, this->shape.extend*2), RED);
 };
 //------------------------------------------------------------------------------

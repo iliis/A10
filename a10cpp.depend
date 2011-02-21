@@ -6735,7 +6735,7 @@
 	"tinyxml.h"
 	<windows.h>
 
-1298284846 source:/home/samuel/projects/cpp/A10/a10_game.cpp
+1298320041 source:/home/samuel/projects/cpp/A10/a10_game.cpp
 	"a10_game.hpp"
 
 1298284382 /home/samuel/projects/cpp/A10/a10_game.hpp
@@ -6778,11 +6778,11 @@
 	"managers/widget.hpp"
 	"tile_map.hpp"
 
-1298285003 source:/home/samuel/projects/cpp/A10/main.cpp
+1298322518 source:/home/samuel/projects/cpp/A10/main.cpp
 	<iostream>
 	"a10_game.hpp"
 
-1295912292 source:/home/samuel/projects/cpp/A10/map_widget.cpp
+1298321145 source:/home/samuel/projects/cpp/A10/map_widget.cpp
 	"map_widget.hpp"
 	"managers/kernel.hpp"
 	"a10_game.hpp"
@@ -6790,11 +6790,12 @@
 1295370657 source:/home/samuel/projects/cpp/A10/tile_manager.cpp
 	"tile_manager.hpp"
 
-1297440045 source:/home/samuel/projects/cpp/A10/creature.cpp
+1298321338 source:/home/samuel/projects/cpp/A10/creature.cpp
 	"creature.hpp"
 
-1298284401 /home/samuel/projects/cpp/A10/creature.hpp
+1298321220 /home/samuel/projects/cpp/A10/creature.hpp
 	"managers/sprites/SpriteSkeleton.hpp"
+	"managers/time_mgr.hpp"
 	"a10_common.hpp"
 	"tile_map.hpp"
 
@@ -6810,7 +6811,7 @@
 	"managers/widget.hpp"
 	"tile_map.hpp"
 
-1298284802 /home/samuel/projects/cpp/A10/anathea/managers/sprites/SpriteSkeleton.hpp
+1298322740 /home/samuel/projects/cpp/A10/anathea/managers/sprites/SpriteSkeleton.hpp
 	<list>
 	<map>
 	<string>
@@ -6848,7 +6849,7 @@
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
-1298282577 /home/samuel/projects/cpp/A10/anathea/managers/widgets/skeleton_editor.hpp
+1298321520 /home/samuel/projects/cpp/A10/anathea/managers/widgets/skeleton_editor.hpp
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
@@ -6960,10 +6961,10 @@
 1295980053 source:/home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteMultiImage.cpp
 	"managers/sprites/SpriteMultiImage.hpp"
 
-1298284987 source:/home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteSkeleton.cpp
+1298322743 source:/home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteSkeleton.cpp
 	"SpriteSkeleton.hpp"
 
-1298284802 /home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteSkeleton.hpp
+1298322740 /home/samuel/projects/cpp/anathea1.7/managers/sprites/SpriteSkeleton.hpp
 	<list>
 	<map>
 	<string>
@@ -7049,11 +7050,11 @@
 	"managers/widget.hpp"
 	"managers/sprites/SpriteText.hpp"
 
-1298284766 source:/home/samuel/projects/cpp/anathea1.7/managers/widgets/skeleton_editor.cpp
+1298321593 source:/home/samuel/projects/cpp/anathea1.7/managers/widgets/skeleton_editor.cpp
 	"skeleton_editor.hpp"
 	"managers/kernel.hpp"
 
-1298282577 /home/samuel/projects/cpp/anathea1.7/managers/widgets/skeleton_editor.hpp
+1298321520 /home/samuel/projects/cpp/anathea1.7/managers/widgets/skeleton_editor.hpp
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 

@@ -2,14 +2,18 @@
 #define CREATURE_HPP_INCLUDED
 
 #include "managers/sprites/SpriteSkeleton.hpp"
+#include "managers/time_mgr.hpp"
 
 #include "a10_common.hpp"
 #include "tile_map.hpp"
 
 struct Creature
 {
+	boost::shared_ptr<GraphicsManager> graphicsMgr;
 	SpriteSkeleton  skeleton;
-	list<SkeletonKeyframe> anim_standing, anim_running_left, anim_running_right;
+	list<SkeletonKeyframe> anim_standing, anim_running_left, anim_running_right, *active_anim;
+	SkeletonKeyframe active_kf; list<SkeletonKeyframe>::iterator next_kf;
+	TimeVal frame_age;
 
 	CBox<double>    shape;
 	vector2<double> speed, skeleton_delta;
@@ -18,10 +22,11 @@ struct Creature
 	bool touching;
 	double health;
 
-	Creature(boost::shared_ptr<GraphicsManager> gmgr);
-	Creature(boost::shared_ptr<GraphicsManager> gmgr, CBox<double> _shape);
+	Creature(boost::shared_ptr<GraphicsManager> gmgr, CBox<double> _shape = CBox<double>(100,50,10,20));
 
 	void move(double sec, TileMap& map);
+
+	void set_current_animation(list<SkeletonKeyframe>& anim);
 
 	inline void setXSpeed(double s){this->speed.x = s;}
 	void setHorizMovement(int sgn);

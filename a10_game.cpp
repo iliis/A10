@@ -17,6 +17,7 @@ A10_Game::A10_Game( Kernel* k )
 	player.anim_running_left  = load_sk_animation(player.skeleton, "animations/player_running_left.ska");
 	player.anim_running_right = load_sk_animation(player.skeleton, "animations/player_running_right.ska");
 	player.anim_standing      = load_sk_animation(player.skeleton, "animations/player_standing.ska");
+	player.set_current_animation(player.anim_standing);
 };
 //------------------------------------------------------------------------------
 void

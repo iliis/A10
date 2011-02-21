@@ -25,11 +25,6 @@ MapWidget::_draw()
 	if(this->draw_creatures)
 	{
 		this->game->getPlayer().draw(delta);
-
-		CBox<double> pshape = game->getPlayer().shape;
-		pshape.center = pshape.center + delta;
-
-		this->kernel->graphicsMgr->drawBoxToScreen(Box(pshape.center - pshape.extend, pshape.extend*2), RED);
 	}
 };
 //------------------------------------------------------------------------------
