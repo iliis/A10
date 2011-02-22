@@ -24,7 +24,7 @@
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-march=i586" />
+					<Add option="-march=core2" />
 					<Add option="-fexpensive-optimizations" />
 					<Add option="-O3" />
 					<Add option="-DRELEASE" />
@@ -43,22 +43,32 @@
 				<Option projectIncludeDirsRelation="1" />
 				<Option projectLibDirsRelation="1" />
 				<Compiler>
+					<Add option="-march=core2" />
+					<Add option="-fexpensive-optimizations" />
 					<Add option="-O2" />
 					<Add option="-Wall" />
 					<Add option="`i686-pc-mingw32-sdl-config --cflags`" />
 					<Add option="-DRELEASE" />
 					<Add option="-DWIN32" />
+					<Add option="-DWINVER=0x0400" />
+					<Add option="-D__WIN95__" />
+					<Add option="-D__GNUWIN32__" />
+					<Add option="-DSTRICT" />
+					<Add option="-DHAVE_W32API_H" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D__WINDOWS__" />
 					<Add option="-DTIXML_USE_TICPP" />
 					<Add option="-DUSE_TINYXML" />
 					<Add option="-DUSE_PROPERTY_TREE" />
 					<Add option="-DDATA_DIR=empty" />
 					<Add directory="/opt/mingw/usr/i686-pc-mingw32/include" />
-					<Add directory="/home/samuel/projects/A10cpp/anathea/" />
+					<Add directory="/home/samuel/projects/cpp/A10/anathea" />
 					<Add directory="/home/samuel/programme/boost_1_43_0" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add option="`i686-pc-mingw32-sdl-config --libs`" />
+					<Add option="-static" />
 					<Add library="SDL_image" />
 					<Add library="SDL_ttf" />
 					<Add library="opengl32" />
