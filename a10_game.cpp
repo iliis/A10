@@ -139,8 +139,6 @@ A10_Game::move_stuff(TimeVal delta)
 {
 	double sec = toSeconds(delta);
 
-	cout << "FPS: " << 1/sec << endl;
-
 	if(not paused and lives>0)
 	{
 
