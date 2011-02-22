@@ -139,6 +139,8 @@ A10_Game::move_stuff(TimeVal delta)
 {
 	double sec = toSeconds(delta);
 
+	cout << "FPS: " << 1/sec << endl;
+
 	if(not paused and lives>0)
 	{
 
@@ -168,7 +170,7 @@ A10_Game::move_stuff(TimeVal delta)
 				cout << "died. lives: " << this->lives << endl;
 				//this->pause();
 				this->died_screen->show();
-				this->died_screen->setAlpha(OPAQUE);
+				this->died_screen->setAlpha(A_OPAQUE);
 				this->died_screen->fadeOut(2);
 			}
 			else

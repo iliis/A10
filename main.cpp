@@ -55,10 +55,10 @@ int main(int argc, char** argv)
 	{
 		cerr << "TinyXML++ caused an EXCEPTION: " << e.what() << endl;
 	}
-	catch(CriticalError& e)
+	/*catch(CriticalError& e)
 	{
 		cerr << "CRITICAL EXCEPTION: " << e.what() << endl;
-	}
+	}*/
 	catch(std::exception& e)
 	{
 		cerr << "EXCEPTION: " << e.what() << endl;
