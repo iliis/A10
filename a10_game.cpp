@@ -6,13 +6,23 @@ A10_Game::A10_Game( Kernel* k )
 	   bg1(k->graphicsMgr->loadImage("gfx/backgrounds/bg1.png")),
 	   bg2(k->graphicsMgr->loadImage("gfx/backgrounds/bg2.png")),
 	   bg3(k->graphicsMgr->loadImage("gfx/backgrounds/bg3.png")),
+	   cursor_direction(k->graphicsMgr->loadImage("gfx/direction_beam.png")),
+	   cursor_cross(k->graphicsMgr->loadImage("gfx/cross.png")),
+	   cursor_arrow(k->graphicsMgr->loadImage("gfx/cursor_arrow.png")),
 	   player(k->graphicsMgr),
 	   lives(MAX_LIVES), paused(true)
 {
+	k->inputMgr->hideCursor();
+	k->inputMgr->grabCursor();
+
+	cursor_arrow.alpha = 50;
+	cursor_direction.alpha = 150;
+
 	player.skeleton.loadFromFile("skeletons/player.skt");
 	player.skeleton.setLineWidth(3);
 	player.skeleton_delta = Vect(0,-8);
 	player.skeleton.setScale(0.05);
+	player.skeleton.setColor(BLACK);
 
 	player.anim_running_left  = load_sk_animation(player.skeleton, "animations/player_running_left.ska");
 	player.anim_running_right = load_sk_animation(player.skeleton, "animations/player_running_right.ska");
@@ -99,6 +109,14 @@ A10_Game::draw()
 		this->bg3.draw(this->map_widget->getDelta()/Vect(2, 4));
 
 		this->drawChilds();
+
+		Vect player_pos = this->player.shape.center+this->map_widget->getDelta();
+
+		double angle = atan(cursor_delta.y/cursor_delta.x); if(cursor_delta.x<0) angle+=PI;
+		//this->cursor_direction.draw_rotated(player_pos, angle, Vect(0, 0.5));
+
+		double dist = cursor_delta.length(); if(dist < 100) dist = 100;
+		this->cursor_arrow.draw_rotated(player_pos + Vect(dist * cos(angle), dist*sin(angle)), angle, Vect(0.5, 0.5));
 	}
 };
 //------------------------------------------------------------------------------
@@ -186,6 +204,10 @@ A10_Game::move_stuff(TimeVal delta)
 		this->map_widget ->setDeltaCenter(this->getPlayer().shape.center*(-1));
 		this->mapf_widget->setDeltaCenter(this->getPlayer().shape.center*(-1));
 	}
+
+	this->cursor_pos   = this->kernel->inputMgr->getPoint("mouse1").point.pos;
+	this->cursor_delta = this->cursor_pos - this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>()/2;
+	//this->cursor_pos - this->player.shape.center - this->map_widget->getDelta();
 };
 //------------------------------------------------------------------------------
 void

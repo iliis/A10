@@ -5,7 +5,7 @@ const double ANIM_SPEED_FACTOR = 5; /// higher = faster
 //------------------------------------------------------------------------------
 Creature::Creature(boost::shared_ptr<GraphicsManager> gmgr, CBox<double> _shape)
  : graphicsMgr(gmgr), skeleton(gmgr),
-   active_anim(&anim_standing), active_kf(0.1), next_kf(anim_standing.begin()), frame_age(0),
+   active_anim(&anim_standing), active_kf(0.1), next_kf(anim_standing.begin()), frame_age(0), time_since_last_touch(0),
    shape(_shape), speed(0,0), horiz_speed(500), jump_speed(800), touching(false), health(100)
 {
 
@@ -25,8 +25,9 @@ Creature::setHorizMovement(int sgn)
 void
 Creature::jump()
 {
-	if (this->touching and this->speed.y <= 0)
+	if (this->time_since_last_touch < fromSeconds(0.15)) ///< allow for jump even a few frames after falling down
 	{
+		this->time_since_last_touch = fromSeconds(100); ///< prevent double jump
 		this->speed.y  = -jump_speed;
 		this->touching = false;
 	}
@@ -37,6 +38,8 @@ Creature::move(double sec, TileMap& map)
 {
 	if(this->health > 0) /// still alive?
 	{
+		touching = false;
+
 		/// Obey gravity. It's the law!
 		speed.y += GRAVITY*sec;
 
@@ -120,6 +123,11 @@ Creature::move(double sec, TileMap& map)
 		else /// not going anywhere
 			this->set_current_animation(this->anim_standing);
 
+		if(this->touching)
+			this->time_since_last_touch = 0;
+		else
+			this->time_since_last_touch += fromSeconds(sec);
+
 		/// ANIMATION
 		//----------------------------------------------------------------------
 		if(this->active_anim)
@@ -152,16 +160,6 @@ Creature::set_current_animation(list<SkeletonKeyframe>& anim)
 		this->active_anim = &anim;
 		this->next_kf     = anim.begin();
 		this->frame_age   = 0;
-	}
-};
-//------------------------------------------------------------------------------
-void
-Creature::jump(double s)
-{
-	if (this->touching and s > 0 and speed.y <= 0)
-	{
-		speed.y  = -s;
-		touching = false;
 	}
 };
 //------------------------------------------------------------------------------

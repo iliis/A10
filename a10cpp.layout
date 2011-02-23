@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Win32" />
+	<ActiveTarget name="Debug" />
 	<File name="anathea/managers/animation_mgr.hpp" open="0" top="0" tabpos="5">
 		<Cursor position="1409" topLine="15" />
 	</File>
@@ -17,15 +17,15 @@
 		<Cursor position="3091" topLine="67" />
 	</File>
 	<File name="anathea/managers/image_mgr.hpp" open="0" top="0" tabpos="6">
-		<Cursor position="1727" topLine="160" />
+		<Cursor position="3179" topLine="66" />
 	</File>
 	<File name="anathea/managers/input_mgr.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="326" topLine="0" />
+		<Cursor position="2617" topLine="24" />
 	</File>
 	<File name="anathea/managers/kernel.hpp" open="0" top="0" tabpos="15">
-		<Cursor position="250" topLine="0" />
+		<Cursor position="250" topLine="22" />
 	</File>
-	<File name="anathea/managers/sprite_mgr.hpp" open="1" top="0" tabpos="4">
+	<File name="anathea/managers/sprite_mgr.hpp" open="0" top="0" tabpos="2">
 		<Cursor position="1108" topLine="11" />
 	</File>
 	<File name="anathea/managers/sprites/SpriteBox.hpp" open="0" top="0" tabpos="0">
@@ -40,10 +40,10 @@
 	<File name="anathea/managers/sprites/SpriteLine.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="65" topLine="0" />
 	</File>
-	<File name="anathea/managers/sprites/SpriteSkeleton.hpp" open="0" top="0" tabpos="2">
-		<Cursor position="4273" topLine="63" />
+	<File name="anathea/managers/sprites/SpriteSkeleton.hpp" open="1" top="0" tabpos="9">
+		<Cursor position="1650" topLine="71" />
 	</File>
-	<File name="anathea/managers/time_mgr.hpp" open="1" top="0" tabpos="5">
+	<File name="anathea/managers/time_mgr.hpp" open="0" top="0" tabpos="3">
 		<Cursor position="280" topLine="0" />
 	</File>
 	<File name="anathea/managers/widget.hpp" open="0" top="0" tabpos="6">
@@ -71,7 +71,7 @@
 		<Cursor position="836" topLine="16" />
 	</File>
 	<File name="anathea/tools/geometry.hpp" open="0" top="0" tabpos="11">
-		<Cursor position="12629" topLine="471" />
+		<Cursor position="3534" topLine="131" />
 	</File>
 	<File name="anathea/tools/mathfuncs.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="1409" topLine="9" />
@@ -91,28 +91,28 @@
 	<File name="a10_common.hpp" open="0" top="0" tabpos="10">
 		<Cursor position="361" topLine="0" />
 	</File>
-	<File name="a10_game.cpp" open="1" top="1" tabpos="7">
-		<Cursor position="4833" topLine="118" />
+	<File name="a10_game.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="925" topLine="1" />
 	</File>
-	<File name="a10_game.hpp" open="1" top="0" tabpos="6">
-		<Cursor position="797" topLine="9" />
+	<File name="a10_game.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="1019" topLine="12" />
 	</File>
-	<File name="creature.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="4122" topLine="121" />
+	<File name="creature.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="1038" topLine="24" />
 	</File>
-	<File name="creature.hpp" open="0" top="0" tabpos="5">
-		<Cursor position="259" topLine="0" />
+	<File name="creature.hpp" open="1" top="0" tabpos="7">
+		<Cursor position="491" topLine="0" />
 	</File>
 	<File name="health_widget.cpp" open="0" top="0" tabpos="12">
 		<Cursor position="604" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="3">
+	<File name="main.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="1012" topLine="29" />
 	</File>
-	<File name="map_widget.cpp" open="0" top="0" tabpos="13">
-		<Cursor position="943" topLine="0" />
+	<File name="map_widget.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1140" topLine="0" />
 	</File>
-	<File name="map_widget.hpp" open="0" top="0" tabpos="14">
+	<File name="map_widget.hpp" open="1" top="0" tabpos="4">
 		<Cursor position="434" topLine="0" />
 	</File>
 	<File name="tile.hpp" open="0" top="0" tabpos="0">
@@ -127,7 +127,7 @@
 	<File name="tile_map.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="5548" topLine="155" />
 	</File>
-	<File name="tile_map.hpp" open="0" top="0" tabpos="4">
-		<Cursor position="999" topLine="20" />
+	<File name="tile_map.hpp" open="1" top="0" tabpos="6">
+		<Cursor position="1709" topLine="19" />
 	</File>
 </CodeBlocks_layout_file>

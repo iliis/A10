@@ -28,6 +28,7 @@ class A10_Game : public Widget
 
 	TileMap map_foreground;
 	Image bg1,bg2,bg3;
+	Image cursor_direction, cursor_cross, cursor_arrow;
 
 // ----------------- GAME LOGIC ------------------------------------------
 	TileMap map1;
@@ -35,6 +36,8 @@ class A10_Game : public Widget
 	int lives;
 
 	bool paused;
+
+	Vect cursor_pos, cursor_delta;
 
 
 

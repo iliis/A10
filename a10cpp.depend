@@ -6269,7 +6269,7 @@
 	"tools/geometry.hpp"
 	"managers/definitions.hpp"
 
-1297452835 /home/samuel/projects/cpp/A10/anathea/tools/geometry.hpp
+1298488238 /home/samuel/projects/cpp/A10/anathea/tools/geometry.hpp
 	<string>
 	<iostream>
 	<math.h>
@@ -6330,7 +6330,7 @@
 	<string>
 	<iostream>
 
-1297525080 /home/samuel/projects/cpp/A10/anathea/managers/input_mgr.hpp
+1298487337 /home/samuel/projects/cpp/A10/anathea/managers/input_mgr.hpp
 	<boost/signal.hpp>
 	"managers/definitions.hpp"
 	"tools/shape.hpp"
@@ -6413,7 +6413,7 @@
 	"tools/slots.hpp"
 	<boost/property_tree/ptree.hpp>
 
-1298403960 /home/samuel/projects/cpp/A10/anathea/managers/image_mgr.hpp
+1298488699 /home/samuel/projects/cpp/A10/anathea/managers/image_mgr.hpp
 	<string.h>
 	<list>
 	<boost/shared_ptr.hpp>
@@ -6739,10 +6739,10 @@
 	"tinyxml.h"
 	<windows.h>
 
-1298403442 source:/home/samuel/projects/cpp/A10/a10_game.cpp
+1298491489 source:/home/samuel/projects/cpp/A10/a10_game.cpp
 	"a10_game.hpp"
 
-1298284382 /home/samuel/projects/cpp/A10/a10_game.hpp
+1298489137 /home/samuel/projects/cpp/A10/a10_game.hpp
 	<map>
 	"managers/kernel.hpp"
 	"managers/widget.hpp"
@@ -6794,10 +6794,10 @@
 1295370657 source:/home/samuel/projects/cpp/A10/tile_manager.cpp
 	"tile_manager.hpp"
 
-1298322920 source:/home/samuel/projects/cpp/A10/creature.cpp
+1298491159 source:/home/samuel/projects/cpp/A10/creature.cpp
 	"creature.hpp"
 
-1298321220 /home/samuel/projects/cpp/A10/creature.hpp
+1298490825 /home/samuel/projects/cpp/A10/creature.hpp
 	"managers/sprites/SpriteSkeleton.hpp"
 	"managers/time_mgr.hpp"
 	"a10_common.hpp"
@@ -6902,13 +6902,13 @@
 	"managers/gui_mgr.hpp"
 	"managers/kernel.hpp"
 
-1298403494 source:/home/samuel/projects/cpp/anathea1.7/managers/image_mgr.cpp
+1298488888 source:/home/samuel/projects/cpp/anathea1.7/managers/image_mgr.cpp
 	"image_mgr.hpp"
 	"tools/stringhelpers.hpp"
 	<iostream>
 	"managers/definitions.hpp"
 
-1298403960 /home/samuel/projects/cpp/anathea1.7/managers/image_mgr.hpp
+1298488699 /home/samuel/projects/cpp/anathea1.7/managers/image_mgr.hpp
 	<string.h>
 	<list>
 	<boost/shared_ptr.hpp>
@@ -6923,7 +6923,7 @@
 1295794069 source:/home/samuel/projects/cpp/anathea1.7/managers/input_mgr.cpp
 	"input_mgr.hpp"
 
-1297525080 /home/samuel/projects/cpp/anathea1.7/managers/input_mgr.hpp
+1298487337 /home/samuel/projects/cpp/anathea1.7/managers/input_mgr.hpp
 	<boost/signal.hpp>
 	"managers/definitions.hpp"
 	"tools/shape.hpp"
