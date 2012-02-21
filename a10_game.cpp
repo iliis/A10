@@ -9,6 +9,7 @@ A10_Game::A10_Game( Kernel* k )
 	   cursor_direction(k->graphicsMgr->loadImage("gfx/direction_beam.png")),
 	   cursor_cross(k->graphicsMgr->loadImage("gfx/cross.png")),
 	   cursor_arrow(k->graphicsMgr->loadImage("gfx/cursor_arrow.png")),
+	   sprite_mgr(k->graphicsMgr),
 	   player(k->graphicsMgr),
 	   lives(MAX_LIVES), paused(true)
 {
@@ -42,24 +43,33 @@ A10_Game::init()
 	setSize(this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>());
 
 	start_screen = kernel->guiMgr->createWidget<WSprite>("start screen");
-	ptree pt = mkPtree("type", "image");
+
+	/*ptree pt = mkPtree("type", "image");
 	pt.put("path", "gfx/text/start.png");
-	start_screen->set(pt);
+	start_screen->set(pt);*/
+
+	start_screen->setSprite(sprite_mgr.createSprite("image", mkPtree("path", "gfx/text/start.png")));
 	start_screen->setAbsPos(this->getSize()/2-start_screen->getSize()/2);
 
 	cout << "start_screen: " << start_screen->getSize().print() << endl;
 
 	gameover_screen = kernel->guiMgr->createWidget<WSprite>("gameover screen");
-	pt.put("path","gfx/text/gameover.png");
-	gameover_screen->set(pt);
+	//pt.put("path","gfx/text/gameover.png");
+	//gameover_screen->set(pt);
+	gameover_screen->setSprite(sprite_mgr.createSprite("image", mkPtree("path", "gfx/text/gameover.png")));
 	gameover_screen->setAbsPos(this->getSize()/2-gameover_screen->getSize()/2);
 	gameover_screen->hide();
 
 	died_screen = kernel->guiMgr->createWidget<WSprite>("died screen");
-	pt.put("path","gfx/text/died.png");
-	died_screen->set(pt);
+	//pt.put("path","gfx/text/died.png");
+	//died_screen->set(pt);
+	died_screen->setSprite(sprite_mgr.createSprite("image", mkPtree("path", "gfx/text/died.png")));
 	died_screen->setAbsPos(this->getSize()/2-died_screen->getSize()/2);
 	died_screen->hide();
+
+	addChild(start_screen);
+	addChild(died_screen);
+	addChild(gameover_screen);
 
 	//skedit_widget = kernel->guiMgr->createWidget<SkeletonEditorWidget>("skeleton editor");
 
@@ -90,6 +100,8 @@ A10_Game::init()
 	status_widget = this->kernel->guiMgr->createWidget<WText>("status text");
 	status_widget->setAbsPos(Vect(10,10));
 	status_widget->setText("Status goes here");
+
+	addChild(status_widget);
 
 	restart();
 };

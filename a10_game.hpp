@@ -31,6 +31,8 @@ class A10_Game : public Widget
 	Image bg1,bg2,bg3;
 	Image cursor_direction, cursor_cross, cursor_arrow;
 
+	SpriteManager sprite_mgr;
+
 // ----------------- GAME LOGIC ------------------------------------------
 	TileMap map1;
 	Creature player;

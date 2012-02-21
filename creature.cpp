@@ -135,7 +135,7 @@ Creature::move(FNumber sec, TileMap& map)
 			assert(this->active_anim->size() > 1);
 			if(this->next_kf == this->active_anim->end()) this->next_kf = this->active_anim->begin();
 
-			this->frame_age += fromSeconds(sec)*ANIM_SPEED_FACTOR;
+			this->frame_age += fromSeconds(sec) * ANIM_SPEED_FACTOR / (touching?1:2); ///< slow in midair
 			while(this->frame_age >= fromSeconds(this->active_kf.duration))
 			{
 				this->frame_age -= fromSeconds(this->active_kf.duration);
