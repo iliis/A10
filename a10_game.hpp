@@ -19,11 +19,12 @@ const int MAX_LIVES = 3;
 class A10_Game : public Widget
 {
 // ---------------- IMPLEMENTATION --------------------------------------
-	void keyListener(KEY k, bool state);
+	bool keyListener(KEY k, bool state);
 
 	boost::shared_ptr<MapWidget>    map_widget, mapf_widget;
 	boost::shared_ptr<HealthWidget> health_widget;
 	boost::shared_ptr<WSprite> start_screen, gameover_screen, died_screen;
+	boost::shared_ptr<WText> status_widget;
 	std::map<string, TileSet*> tilesets;
 
 	TileMap map_foreground;
@@ -68,6 +69,9 @@ public:
 	inline TileMap&  getMainMap(){return this->map1;}
 	inline Creature& getPlayer(){return this->player;}
 	inline int       getPlayerLives(){return this->lives;}
+
+
+	virtual const char* getType() const {return "A10_Game";}
 };
 
 #endif // A10_GAME_HPP_INCLUDED

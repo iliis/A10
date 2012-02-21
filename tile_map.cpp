@@ -123,7 +123,7 @@ TileMap::toScreenCoords(MapCoords v)
 };
 //------------------------------------------------------------------------------
 bool
-TileMap::collides(CBox<double> box,  uint32_t flag)
+TileMap::collides(CBox<Vect::T> box,  uint32_t flag)
 {
 	MapCoords topleft     = this->toMapCoords(box.center - box.extend);
 	MapCoords bottomright = this->toMapCoords(box.center + box.extend);
@@ -137,9 +137,9 @@ TileMap::collides(CBox<double> box,  uint32_t flag)
 };
 //------------------------------------------------------------------------------
 bool
-TileMap::collides(CBoxEdge<double> edge, uint32_t flag)
+TileMap::collides(CBoxEdge<Vect::T> edge, uint32_t flag)
 {
-	return this->collides(CBox<double>(edge), flag);
+	return this->collides(CBox<Vect::T>(edge), flag);
 };
 //------------------------------------------------------------------------------
 bool
@@ -160,8 +160,8 @@ TileMap::collides(MapCoords    point,    uint32_t flag)
 	     or point.y >= this->size.y;
 };
 //------------------------------------------------------------------------------
-double
-TileMap::getDistToNearestBlock(CBoxEdge<double>& e, double maxdist, int dim, uint32_t flag)
+Vect::T
+TileMap::getDistToNearestBlock(CBoxEdge<Vect::T>& e, Vect::T maxdist, int dim, uint32_t flag)
 {
 	assert(valid_dim(dim));
 	assert(    (dim==1 and e.p1.y <= e.p2.y and e.p1.x == e.p2.x)

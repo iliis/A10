@@ -12,28 +12,9 @@ void close_on_esc(KEY key, bool state, Kernel* k)
 		k->stop();
 }
 
-class Foo
-{
-public:
-	int val;
-
-	Foo(int i) : val(i) {};
-};
-
-class Bar
-{
-	Foo f;
-public:
-	Bar() : f(42) {};
-
-	void set(){this->f = Foo(123);}
-};
 
 int main(int argc, char** argv)
 {
-	Bar b;
-	b.set();
-
 	try
 	{
 		Kernel kernel(argc, argv);

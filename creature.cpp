@@ -1,9 +1,9 @@
 #include "creature.hpp"
 
-const double ANIM_SPEED_FACTOR = 5; /// higher = faster
+const FNumber ANIM_SPEED_FACTOR = 5; /// higher = faster
 
 //------------------------------------------------------------------------------
-Creature::Creature(boost::shared_ptr<GraphicsManager> gmgr, CBox<double> _shape)
+Creature::Creature(boost::shared_ptr<GraphicsManager> gmgr, CBox<Vect::T> _shape)
  : graphicsMgr(gmgr), skeleton(gmgr),
    active_anim(&anim_standing), active_kf(0.1), next_kf(anim_standing.begin()), frame_age(0), time_since_last_touch(0),
    shape(_shape), speed(0,0), horiz_speed(500), jump_speed(800), touching(false), health(100)
@@ -34,7 +34,7 @@ Creature::jump()
 };
 //------------------------------------------------------------------------------
 void
-Creature::move(double sec, TileMap& map)
+Creature::move(FNumber sec, TileMap& map)
 {
 	if(this->health > 0) /// still alive?
 	{
@@ -43,7 +43,7 @@ Creature::move(double sec, TileMap& map)
 		/// Obey gravity. It's the law!
 		speed.y += GRAVITY*sec;
 
-		vector2<double> newpos = shape.center + speed*sec;
+		vector2<Vect::T> newpos = shape.center + speed*sec;
 
 		/// horizontal bounding
 		if (newpos.x + shape.extend.x >= map.getPixelWidth())
@@ -75,13 +75,13 @@ Creature::move(double sec, TileMap& map)
 		/// horizontal
 		if (speed.x != 0 and newpos.x - shape.center.x != 0) ///< horiz movement?
 		{
-			CBoxEdge<double> tmpedge = shape.edgeX(speed.x);
+			CBoxEdge<Vect::T> tmpedge = shape.edgeX(speed.x);
 
 			/// otherwise we get collisions due to small errors:
 			tmpedge.p1.y += 0.2;
 			tmpedge.p2.y -= 0.2;
 
-			double col_dist = map.getDistToNearestBlock(tmpedge, newpos.x-shape.center.x, 1, 1);
+			FNumber col_dist = map.getDistToNearestBlock(tmpedge, newpos.x-shape.center.x, 1, 1);
 
 			if (Abs(col_dist) < Abs(newpos.x-shape.center.x))
 			{
@@ -95,13 +95,13 @@ Creature::move(double sec, TileMap& map)
 		/// vertical
 		if (speed.y != 0 and newpos.y-shape.center.y != 0) ///< vertical movement?
 		{
-			CBoxEdge<double> tmpedge = shape.edgeY(speed.y);
+			CBoxEdge<Vect::T> tmpedge = shape.edgeY(speed.y);
 
 			/// again, to counter small errors:
 			tmpedge.p1.x += 0.1;
 			tmpedge.p2.x -= 0.1;
 
-			double col_dist = map.getDistToNearestBlock(tmpedge, newpos.y-shape.center.y, 2, 1);
+			FNumber col_dist = map.getDistToNearestBlock(tmpedge, newpos.y-shape.center.y, 2, 1);
 			col_dist = col_dist;
 
 			if (Abs(col_dist) < Abs(newpos.y-shape.center.y))
@@ -176,7 +176,7 @@ Creature::swap_position(Creature& c)
 };
 //------------------------------------------------------------------------------
 void
-Creature::draw(vector2<double> delta)
+Creature::draw(vector2<Vect::T> delta)
 {
 	this->skeleton.draw(this->shape.center+delta+this->skeleton_delta);
 

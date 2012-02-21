@@ -11,7 +11,7 @@ class MapWidget : public Widget
 {
 	A10_Game* game;
 	TileMap*  map;
-	vector2<double> delta;
+	Vect delta;
 	bool draw_creatures;
 protected:
 	virtual	void	_set(ptree n){};
@@ -19,12 +19,14 @@ protected:
 public:
 	MapWidget(A10_Game* _game, string name, Kernel* k);
 
-	inline vector2<double> getDelta(){return this->delta;}
+	inline Vect getDelta(){return this->delta;}
 
-	void setDelta(vector2<double> d);
-	void setDeltaCenter(vector2<double> d);
+	void setDelta(Vect d);
+	void setDeltaCenter(Vect d);
 	inline void setMap(TileMap* m){assert(m); this->map = m;}
 	inline void enableCreatures(bool enable=true){this->draw_creatures = enable;}
+
+	virtual const char* getType() const {return "A10_MapWidget";}
 };
 
 #endif // MAP_WIDGET_HPP_INCLUDED

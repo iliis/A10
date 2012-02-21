@@ -11,11 +11,12 @@
 
 #include "tools/errorclass.hpp"
 #include "tools/geometry.hpp"
+#include "managers/definitions.hpp"
 
-typedef vector2<double> ScreenCoords;
-typedef vector2<int>    MapCoords;
+typedef vector2<Vect::T> ScreenCoords;
+typedef vector2<int>     MapCoords;
 
-const double GRAVITY  = 2500;
+const Vect::T GRAVITY  = 2500;
 
 #define valid_dim(x) valid_dim2(x)
 

@@ -13,16 +13,16 @@ A10_Game::A10_Game( Kernel* k )
 	   lives(MAX_LIVES), paused(true)
 {
 	k->inputMgr->hideCursor();
-	k->inputMgr->grabCursor();
+	//k->inputMgr->grabCursor();
 
-	cursor_arrow.alpha = 50;
-	cursor_direction.alpha = 150;
+	cursor_arrow.    color.setA(50);
+	cursor_direction.color.setA(150);
 
 	player.skeleton.loadFromFile("skeletons/player.skt");
 	player.skeleton.setLineWidth(3);
 	player.skeleton_delta = Vect(0,-8);
 	player.skeleton.setScale(0.05);
-	player.skeleton.setColor(BLACK);
+	player.skeleton.setColor(WHITE);
 
 	player.anim_running_left  = load_sk_animation(player.skeleton, "animations/player_running_left.ska");
 	player.anim_running_right = load_sk_animation(player.skeleton, "animations/player_running_right.ska");
@@ -37,6 +37,7 @@ A10_Game::init()
 
 	kernel->inputMgr->addKeyListener(boost::bind(&A10_Game::keyListener, this, _1, _2));
 	kernel->setCalcFrameFunc        (boost::bind(&A10_Game::move_stuff,  this, _1));
+	kernel->settings.appname = "A10";
 
 	setSize(this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>());
 
@@ -85,6 +86,11 @@ A10_Game::init()
 	addChild(map_widget);
 	kernel->guiMgr->addWidget(shared_from_this());
 
+
+	status_widget = this->kernel->guiMgr->createWidget<WText>("status text");
+	status_widget->setAbsPos(Vect(10,10));
+	status_widget->setText("Status goes here");
+
 	restart();
 };
 //------------------------------------------------------------------------------
@@ -101,8 +107,8 @@ A10_Game::draw()
 {
 	if(this->isVisible())
 	{
-		if(this->isBoundingBoxEnabled())
-			this->kernel->graphicsMgr->drawBoxToScreen(this->getShape());
+		if(this->draw_bounding_box) //this->isBoundingBoxEnabled())
+			this->kernel->graphicsMgr->drawBoxToScreen(this->getBB());
 
 		this->bg1.draw(this->map_widget->getDelta()/Vect(4, 8));
 		this->bg2.draw(this->map_widget->getDelta()/Vect(3, 6));
@@ -120,11 +126,11 @@ A10_Game::draw()
 	}
 };
 //------------------------------------------------------------------------------
-void
+bool
 A10_Game::keyListener(KEY k, bool state)
 {
 	if(state and k == KEY_ESCAPE)
-		this->kernel->stop();
+		{this->kernel->stop(); return true;}
 
 	if(state and paused)
 	{
@@ -134,7 +140,11 @@ A10_Game::keyListener(KEY k, bool state)
 		this->died_screen->hide();
 
 		if(this->lives <= 0) this->restart();
+
+		return true;
 	}
+
+	return false; // didn't handle input
 };
 //------------------------------------------------------------------------------
 TileSet*
@@ -188,7 +198,7 @@ A10_Game::move_stuff(TimeVal delta)
 				cout << "died. lives: " << this->lives << endl;
 				//this->pause();
 				this->died_screen->show();
-				this->died_screen->setAlpha(A_OPAQUE);
+				this->died_screen->alpha = A_OPAQUE;
 				this->died_screen->fadeOut(2);
 			}
 			else
@@ -213,7 +223,7 @@ A10_Game::move_stuff(TimeVal delta)
 void
 A10_Game::reset_player()
 {
-	this->player.speed        = vector2<double>(0,0);
+	this->player.speed        = Vect(0,0);
 	this->player.shape.center = this->getMainMap().getStartPosScr();
 };
 //------------------------------------------------------------------------------

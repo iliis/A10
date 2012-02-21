@@ -42,10 +42,10 @@ public:
 
 	bool collides(CBox<FNumber>    box,   uint32_t flag);
 	bool collides(CBoxEdge<FNumber> edge, uint32_t flag);
-	bool collides(ScreenCoords point,    uint32_t flag);
-	bool collides(MapCoords    point,    uint32_t flag);
+	bool collides(ScreenCoords point,     uint32_t flag);
+	bool collides(MapCoords    point,     uint32_t flag);
 
-	inline int tileSize(int dim){assert(valid_dim(dim)); return this->tile_size[dim];};
+	inline int  tileSize(const int dim) {assert(valid_dim(dim)); return this->tile_size[dim];};
 	inline Tile* getData(int x, int y){assert(x>=0 and x<size.x); assert(y>=0 and y<size.y); assert(data); return data[y*size.x + x];}
 	inline Tile* getData(MapCoords pos){return getData(pos.x,pos.y);}
 	inline int   getWidth(){return this->size.x;}

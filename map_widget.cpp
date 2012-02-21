@@ -14,8 +14,8 @@ MapWidget::_draw()
 {
 	assert(this->map);
 
-	for(int y=max(-delta.y/this->map->getTileH()-2, 0.0); y<this->map->getHeight() and y<(-delta.y+this->getHeight())/this->map->getTileH(); ++y)
-	for(int x=max(-delta.x/this->map->getTileW()-2, 0.0); x<this->map->getWidth()  and x<(-delta.x+this->getWidth() )/this->map->getTileW(); ++x)
+	for(int y=max(-delta.y/this->map->getTileH()-2, Vect::T(0)); y<this->map->getHeight() and y<(-delta.y+this->height)/this->map->getTileH(); ++y)
+	for(int x=max(-delta.x/this->map->getTileW()-2, Vect::T(0)); x<this->map->getWidth()  and x<(-delta.x+this->width )/this->map->getTileW(); ++x)
 	{
 		Tile* t = this->map->getData(x,y);
 
@@ -29,7 +29,7 @@ MapWidget::_draw()
 };
 //------------------------------------------------------------------------------
 void
-MapWidget::setDelta(vector2<double> d)
+MapWidget::setDelta(Vect d)
 {
 	for(int dim=1;dim<3;++dim)
 	{
@@ -43,7 +43,7 @@ MapWidget::setDelta(vector2<double> d)
 };
 //------------------------------------------------------------------------------
 void
-MapWidget::setDeltaCenter(vector2<double> d)
+MapWidget::setDeltaCenter(Vect d)
 {
 	this->setDelta(d+this->getSize()/2);
 };

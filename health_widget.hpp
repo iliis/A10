@@ -15,6 +15,8 @@ protected:
 	virtual	void 	_draw();
 public:
 	HealthWidget(A10_Game* _game, string name, Kernel* k);
+
+	virtual const char* getType() const {return "A10_HealthWidget";}
 };
 
 #endif // HEALTH_WIDGET_HPP_INCLUDED

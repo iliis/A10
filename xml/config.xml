@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <settings>
 	<!-- bpp (bits per pixel): 0 = use current -->
-	<screen w=1680
-			h=1050
+	<screen w=1024
+			h=700
 			bpp=0
 			fullscreen="false"
 			maxFPS=100
@@ -13,5 +13,5 @@
 	<styles sprites="xml/stylesheets/sprites.xml"
 			widgets="xml/stylesheets/widgets.xml" />
 	
-	<misc appname="Anathea 1.6" />
+	<misc appname="A10" />
 </settings>
