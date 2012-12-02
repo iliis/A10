@@ -23,7 +23,7 @@ int main(int argc, char** argv)
 		kernel.inputMgr->addKeyListener(boost::bind(close_on_esc, _1, _2, &kernel));
 
 		//WidgetPtr skedit = kernel.guiMgr->createWidget<SkeletonEditorWidget>("sk_editor");
-		//skedit->setSize(kernel.graphicsMgr->getScreenSize().cast<double>());
+		//skedit->setSize(kernel.graphicsMgr->getScreenSize().cast<Vect::T>());
 
 		boost::shared_ptr<A10_Game> game = boost::shared_ptr<A10_Game>(new A10_Game(&kernel));
 		game->init();
@@ -49,8 +49,10 @@ int main(int argc, char** argv)
 		cerr << "UNDEFINED ERROR" << endl;
 	}
 
+#ifdef DEBUG
 	cout << endl << "Press ENTER to quit" << endl;
 	waitForEnter();
+#endif
 
 	return EXIT_FAILURE;
 }

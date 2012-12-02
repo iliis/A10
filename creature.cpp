@@ -5,8 +5,12 @@ const FNumber ANIM_SPEED_FACTOR = 5; /// higher = faster
 //------------------------------------------------------------------------------
 Creature::Creature(boost::shared_ptr<GraphicsManager> gmgr, CBox<Vect::T> _shape)
  : graphicsMgr(gmgr), skeleton(gmgr),
-   active_anim(&anim_standing), active_kf(0.1), next_kf(anim_standing.begin()), frame_age(0), time_since_last_touch(0),
-   shape(_shape), speed(0,0), horiz_speed(500), jump_speed(800), touching(false), health(100)
+   active_anim(&anim_standing), active_kf(0.1), next_kf(anim_standing.begin()), frame_age(0), time_since_last_touch(0), time_since_last_jump(0),
+   /// some balancing stuff:
+   shape(_shape), speed(0,0),
+   horiz_speed(500), ///< max
+   jump_speed(800),  ///< max; half on start, the rest if player keeps pressing 'jump'
+   horiz_acceleration(3000), vert_acceleration(3300), touching(false), health(100)
 {
 
 };
@@ -23,14 +27,25 @@ Creature::setHorizMovement(int sgn)
 };
 //------------------------------------------------------------------------------
 void
-Creature::jump()
+Creature::jump(FNumber sec)
 {
+	/// jumping from ground right now?
 	if (this->time_since_last_touch < fromSeconds(0.15)) ///< allow for jump even a few frames after falling down
 	{
 		this->time_since_last_touch = fromSeconds(100); ///< prevent double jump
-		this->speed.y  = -jump_speed;
+		this->time_since_last_jump  = 0;
+		this->speed.y  = -jump_speed/2;
 		this->touching = false;
 	}
+
+	/// in midair?
+	if(!this->touching and this->time_since_last_jump < fromSeconds(0.15)) ///< allow max. jump-acceleration during first of 0.5s after jumping
+	{
+		FNumber v_accel = sec * this->vert_acceleration;
+		this->speed.y = max(this->speed.y - v_accel, -this->jump_speed); ///< jumping up = negative velocity; limit to jump_speed
+	}
+
+	this->time_since_last_jump += fromSeconds(sec); /// not very precise, but well...
 };
 //------------------------------------------------------------------------------
 void
@@ -127,6 +142,7 @@ Creature::move(FNumber sec, TileMap& map)
 			this->time_since_last_touch = 0;
 		else
 			this->time_since_last_touch += fromSeconds(sec);
+
 
 		/// ANIMATION
 		//----------------------------------------------------------------------
