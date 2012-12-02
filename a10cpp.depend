@@ -1581,14 +1581,14 @@
 	<boost/bind/arg.hpp>
 	<boost/config.hpp>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/time_mgr.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/time_mgr.hpp
 	<time.h>
 	"tools/stringhelpers.hpp"
 	<windows.h>
 	<time.h>
 	<sys/time.h>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/stringhelpers.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/stringhelpers.hpp
 	<stdio.h>
 	<string>
 	<sstream>
@@ -3139,7 +3139,7 @@
 	<boost/algorithm/string/finder.hpp>
 	<boost/algorithm/string/formatter.hpp>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/mathfuncs.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/mathfuncs.hpp
 	<list>
 	<math.h>
 	<stdio.h>
@@ -3147,7 +3147,7 @@
 	"tools/errorclass.hpp"
 	<boost/foreach.hpp>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/errorclass.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/errorclass.hpp
 	<stdexcept>
 	<string.h>
 
@@ -5190,7 +5190,7 @@
 	<boost/iterator/reverse_iterator.hpp>
 	<memory>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/slots.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/slots.hpp
 	<boost/signals.hpp>
 	<boost/enable_shared_from_this.hpp>
 	<boost/bind.hpp>
@@ -5423,11 +5423,11 @@
 1250766128 /home/samuel/programme/boost_1_43_0/boost/signals/signal10.hpp
 	<boost/signals/signal_template.hpp>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/shape.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/shape.hpp
 	"tools/geometry.hpp"
 	"managers/definitions.hpp"
 
-1329813684 /home/samuel/projects/A10cpp/anathea/tools/geometry.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/geometry.hpp
 	<string>
 	<iostream>
 	<math.h>
@@ -5436,7 +5436,7 @@
 	"tools/ticpp/ticpp.h"
 	<boost/property_tree/ptree.hpp>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/ticpp/ticpp.h
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/ticpp/ticpp.h
 	"tinyxml.h"
 	<sstream>
 	<vector>
@@ -5444,7 +5444,7 @@
 	<exception>
 	<typeinfo>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/ticpp/tinyxml.h
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/ticpp/tinyxml.h
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
@@ -5456,21 +5456,21 @@
 	"tinystr.h"
 	"ticpprc.h"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/ticpp/tinystr.h
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/ticpp/tinystr.h
 	<assert.h>
 	<string.h>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/ticpp/ticpprc.h
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/ticpp/ticpprc.h
 	<vector>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/definitions.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/definitions.hpp
 	<SDL/SDL.h>
 	<SDL/SDL_opengl.h>
 	"tools/geometry.hpp"
 	"tools/color.hpp"
 	"tools/misc.hpp"
 
-1314351703 /usr/include/SDL/SDL.h
+1327664837 /usr/include/SDL/SDL.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_audio.h"
@@ -5489,14 +5489,14 @@
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_main.h
+1327664837 /usr/include/SDL/SDL_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_stdinc.h
+1327664837 /usr/include/SDL/SDL_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -5522,26 +5522,17 @@
 	<stdlib.h>
 	"close_code.h"
 
-1314351704 /usr/include/SDL/SDL_config.h
-	"SDL_config-i386.h"
-	"SDL_config-ia64.h"
-	"SDL_config-ppc64.h"
-	"SDL_config-ppc.h"
-	"SDL_config-s390x.h"
-	"SDL_config-s390.h"
-	"SDL_config-x86_64.h"
-	"SDL_config-arm.h"
-	"SDL_config-alpha.h"
-	"SDL_config-sparc64.h"
-	"SDL_config-sparc.h"
+1327664837 /usr/include/SDL/SDL_config.h
+	"SDL_platform.h"
+	<stdarg.h>
 
-1314351703 /usr/include/SDL/SDL_platform.h
+1327664837 /usr/include/SDL/SDL_platform.h
 
-1314351703 /usr/include/SDL/begin_code.h
+1327664837 /usr/include/SDL/begin_code.h
 
-1314351703 /usr/include/SDL/close_code.h
+1327664837 /usr/include/SDL/close_code.h
 
-1314351703 /usr/include/SDL/SDL_audio.h
+1327664837 /usr/include/SDL/SDL_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -5551,24 +5542,23 @@
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_error.h
+1327664837 /usr/include/SDL/SDL_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_endian.h
+1327664837 /usr/include/SDL/SDL_endian.h
 	"SDL_stdinc.h"
-	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_mutex.h
+1327664837 /usr/include/SDL/SDL_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_thread.h
+1327664837 /usr/include/SDL/SDL_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_mutex.h"
@@ -5576,24 +5566,24 @@
 	<process.h>
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_rwops.h
+1327664837 /usr/include/SDL/SDL_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_cdrom.h
+1327664837 /usr/include/SDL/SDL_cdrom.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_cpuinfo.h
+1327664837 /usr/include/SDL/SDL_cpuinfo.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_events.h
+1327664837 /usr/include/SDL/SDL_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_active.h"
@@ -5604,58 +5594,58 @@
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_active.h
+1327664837 /usr/include/SDL/SDL_active.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_keyboard.h
+1327664837 /usr/include/SDL/SDL_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keysym.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_keysym.h
+1327664837 /usr/include/SDL/SDL_keysym.h
 
-1314351703 /usr/include/SDL/SDL_mouse.h
+1327664837 /usr/include/SDL/SDL_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_video.h
+1327664837 /usr/include/SDL/SDL_video.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_joystick.h
+1327664837 /usr/include/SDL/SDL_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_quit.h
+1327664837 /usr/include/SDL/SDL_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1314351703 /usr/include/SDL/SDL_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1314351703 /usr/include/SDL/SDL_timer.h
+1327664837 /usr/include/SDL/SDL_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1314351703 /usr/include/SDL/SDL_version.h
+1327664837 /usr/include/SDL/SDL_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1327664837 /usr/include/SDL/SDL_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
@@ -5672,7 +5662,7 @@
 	<windows.h>
 	<stddef.h>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/color.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/color.hpp
 	<iostream>
 	<string.h>
 	<SDL/SDL.h>
@@ -5712,13 +5702,13 @@
 	<boost/assert.hpp>
 	<boost/static_assert.hpp>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/misc.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/misc.hpp
 	<boost/function.hpp>
 	<list>
 	<string>
 	<iostream>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/input_mgr.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/input_mgr.hpp
 	<boost/signal.hpp>
 	"managers/definitions.hpp"
 	"tools/shape.hpp"
@@ -5730,7 +5720,7 @@
 	"managers/widget.hpp"
 	"managers/constraint_mgr.hpp"
 
-1329838351 /home/samuel/projects/A10cpp/anathea/managers/widget.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widget.hpp
 	<map>
 	<string>
 	<typeinfo>
@@ -5757,14 +5747,14 @@
 	"managers/gui_mgr.hpp"
 	"managers/kernel.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/gui_mgr.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/gui_mgr.hpp
 	"boost/bind.hpp"
 	"managers/widget.hpp"
 	"managers/input_mgr.hpp"
 	"managers/image_mgr.hpp"
 	"tools/ticpp/ticpp.h"
 
-1329745573 /home/samuel/projects/A10cpp/anathea/managers/widgets/all_widgets.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/all_widgets.hpp
 	"managers/widgets/widget_button.hpp"
 	"managers/widgets/widget_container.hpp"
 	"managers/widgets/widget_filetree.hpp"
@@ -5779,7 +5769,7 @@
 	"managers/sprites/all_sprites.hpp"
 	"managers/constraints.hpp"
 
-1296475159 /home/samuel/projects/A10cpp/anathea/managers/sprites/all_sprites.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprites/all_sprites.hpp
 	"managers/sprites/SpriteBox.hpp"
 	"managers/sprites/SpriteImage.hpp"
 	"managers/sprites/SpriteLine.hpp"
@@ -5787,16 +5777,16 @@
 	"managers/sprites/SpriteDynamicImage.hpp"
 	"managers/sprites/SpriteMultiImage.hpp"
 
-1298365711 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteBox.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteBox.hpp
 	"managers/sprite_mgr.hpp"
 
-1329745085 /home/samuel/projects/A10cpp/anathea/managers/sprite_mgr.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprite_mgr.hpp
 	<boost/foreach.hpp>
 	"managers/image_mgr.hpp"
 	"tools/slots.hpp"
 	<boost/property_tree/ptree.hpp>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/image_mgr.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/image_mgr.hpp
 	<string.h>
 	<list>
 	<boost/shared_ptr.hpp>
@@ -5808,13 +5798,13 @@
 	"tools/expression.hpp"
 	"managers/definitions.hpp"
 
-1297129716 /usr/include/SDL/SDL_image.h
+1325206101 /usr/include/SDL/SDL_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1297129998 /usr/include/SDL/SDL_ttf.h
+1325205476 /usr/include/SDL/SDL_ttf.h
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
@@ -5823,21 +5813,21 @@
 	<math.h>
 	"SDL.h"
 
-1329813110 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteImage.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteImage.hpp
 	"managers/sprite_mgr.hpp"
 
-1296475159 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteLine.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteLine.hpp
 	"managers/sprite_mgr.hpp"
 
-1329813153 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteText.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteText.hpp
 	<string>
 	"managers/sprite_mgr.hpp"
 	"managers/definitions.hpp"
 
-1296475159 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteDynamicImage.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteDynamicImage.hpp
 	"managers/sprites/SpriteImage.hpp"
 
-1296475159 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteMultiImage.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteMultiImage.hpp
 	"managers/sprites/SpriteImage.hpp"
 
 1298323400 /home/samuel/projects/A10cpp/anathea/managers/constraints.hpp
@@ -5848,11 +5838,11 @@
 	"managers/widget.hpp"
 	"managers/sprites/SpriteText.hpp"
 
-1329813803 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_sprite.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_sprite.hpp
 	"managers/widget.hpp"
 	"managers/sprite_mgr.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_list.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_list.hpp
 	"managers/widget.hpp"
 	"managers/image_mgr.hpp"
 	"managers/kernel.hpp"
@@ -5880,7 +5870,7 @@
 	"managers/sprites/all_sprites.hpp"
 	"managers/constraints.hpp"
 
-1329812919 /home/samuel/projects/A10cpp/anathea/managers/kernel.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/kernel.hpp
 	"managers/definitions.hpp"
 	"managers/gui_mgr.hpp"
 	"managers/input_mgr.hpp"
@@ -5890,7 +5880,7 @@
 	<boost/property_tree/ptree.hpp>
 	<boost/filesystem.hpp>
 
-1329838132 /home/samuel/projects/A10cpp/anathea/managers/animation_mgr.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/animation_mgr.hpp
 	<boost/function.hpp>
 	<boost/shared_ptr.hpp>
 	<boost/bind.hpp>
@@ -6149,11 +6139,11 @@
 	"tinyxml.h"
 	<windows.h>
 
-1299244795 source:/home/samuel/projects/A10cpp/main.cpp
+1329911567 source:/home/samuel/projects/A10cpp/main.cpp
 	<iostream>
 	"a10_game.hpp"
 
-1329825429 /home/samuel/projects/A10cpp/a10_game.hpp
+1329894891 /home/samuel/projects/A10cpp/a10_game.hpp
 	<map>
 	"managers/kernel.hpp"
 	"managers/widget.hpp"
@@ -6165,20 +6155,20 @@
 	"health_widget.hpp"
 	"creature.hpp"
 
-1329835215 source:/home/samuel/projects/A10cpp/a10_game.cpp
+1329980391 source:/home/samuel/projects/A10cpp/a10_game.cpp
 	"a10_game.hpp"
 
-1329813735 /home/samuel/projects/A10cpp/tile_map.hpp
+1329894891 /home/samuel/projects/A10cpp/tile_map.hpp
 	"tile.hpp"
 	"tile_manager.hpp"
 	"a10_common.hpp"
 
-1295292997 /home/samuel/projects/A10cpp/tile.hpp
+1329894891 /home/samuel/projects/A10cpp/tile.hpp
 	<string>
 	<stdint.h>
 	"managers/image_mgr.hpp"
 
-1329825500 /home/samuel/projects/A10cpp/a10_common.hpp
+1329894891 /home/samuel/projects/A10cpp/a10_common.hpp
 	<iostream>
 	<fstream>
 	<string>
@@ -6189,23 +6179,23 @@
 	"tools/geometry.hpp"
 	"managers/definitions.hpp"
 
-1329825775 source:/home/samuel/projects/A10cpp/tile_map.cpp
+1329894891 source:/home/samuel/projects/A10cpp/tile_map.cpp
 	"tile_map.hpp"
 
-1329812658 /home/samuel/projects/A10cpp/map_widget.hpp
+1329894891 /home/samuel/projects/A10cpp/map_widget.hpp
 	"managers/widget.hpp"
 	"tile_map.hpp"
 
-1329825820 source:/home/samuel/projects/A10cpp/map_widget.cpp
+1329894891 source:/home/samuel/projects/A10cpp/map_widget.cpp
 	"map_widget.hpp"
 	"managers/kernel.hpp"
 	"a10_game.hpp"
 
-1295309639 /home/samuel/projects/A10cpp/tile_manager.hpp
+1329894891 /home/samuel/projects/A10cpp/tile_manager.hpp
 	"a10_common.hpp"
 	"tile.hpp"
 
-1295526188 source:/home/samuel/projects/A10cpp/tile_manager.cpp
+1329894891 source:/home/samuel/projects/A10cpp/tile_manager.cpp
 	"tile_manager.hpp"
 
 1294256769 source:/home/samuel/projects/cpp/anathea1.6/managers/animation_mgr.cpp
@@ -7390,7 +7380,7 @@
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
-1329745398 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteSkeleton.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteSkeleton.hpp
 	<list>
 	<map>
 	<string>
@@ -7517,25 +7507,25 @@
 	"tinyxml.h"
 	<windows.h>
 
-1329756792 source:/home/samuel/projects/A10cpp/creature.cpp
+1329981476 source:/home/samuel/projects/A10cpp/creature.cpp
 	"creature.hpp"
 
-1329756707 /home/samuel/projects/A10cpp/creature.hpp
+1329927793 /home/samuel/projects/A10cpp/creature.hpp
 	"managers/sprites/SpriteSkeleton.hpp"
 	"managers/time_mgr.hpp"
 	"a10_common.hpp"
 	"tile_map.hpp"
 
-1329825383 source:/home/samuel/projects/A10cpp/health_widget.cpp
+1329894891 source:/home/samuel/projects/A10cpp/health_widget.cpp
 	"health_widget.hpp"
 	"managers/kernel.hpp"
 	"a10_game.hpp"
 
-1329757008 /home/samuel/projects/A10cpp/health_widget.hpp
+1329894891 /home/samuel/projects/A10cpp/health_widget.hpp
 	"managers/widget.hpp"
 	"tile_map.hpp"
 
-1298323400 /home/samuel/projects/A10cpp/anathea/managers/widgets/skeleton_editor.hpp
+1329895615 /home/samuel/projects/A10cpp/anathea/managers/widgets/skeleton_editor.hpp
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
@@ -14449,7 +14439,7 @@
 	"managers/widget.hpp"
 	"managers/sprites/SpriteSkeleton.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/expression.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/expression.hpp
 	<algorithm>
 	<string>
 	<boost/signals.hpp>
@@ -14457,30 +14447,30 @@
 	<boost/foreach.hpp>
 	"tools/errorclass.hpp"
 
-1329841016 source:/home/samuel/projects/A10cpp/anathea/managers/animation_mgr.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/animation_mgr.cpp
 	"animation_mgr.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/gui_mgr.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/gui_mgr.cpp
 	"managers/gui_mgr.hpp"
 	"managers/kernel.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_button.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_button.hpp
 	"managers/widget.hpp"
 	"managers/image_mgr.hpp"
 	"managers/kernel.hpp"
 	"managers/widgets/widget_text.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_text.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_text.hpp
 	"managers/widget.hpp"
 	"managers/image_mgr.hpp"
 	"managers/kernel.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_container.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_container.hpp
 	"managers/widget.hpp"
 	"managers/image_mgr.hpp"
 	"managers/kernel.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_filetree.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_filetree.hpp
 	<boost/filesystem.hpp>
 	"managers/widget.hpp"
 	"managers/image_mgr.hpp"
@@ -14490,12 +14480,12 @@
 	"managers/widgets/widget_list.hpp"
 	"managers/widgets/widget_image.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_image.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_image.hpp
 	"managers/widget.hpp"
 	"managers/image_mgr.hpp"
 	"managers/kernel.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_window.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/managers/widgets/widget_window.hpp
 	"managers/widget.hpp"
 	"managers/image_mgr.hpp"
 	"managers/kernel.hpp"
@@ -14503,178 +14493,178 @@
 	"managers/widgets/widget_button.hpp"
 	"managers/widgets/widget_container.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/image_mgr.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/image_mgr.cpp
 	"image_mgr.hpp"
 	"tools/stringhelpers.hpp"
 	<iostream>
 	"managers/definitions.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/input_mgr.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/input_mgr.cpp
 	"input_mgr.hpp"
 
-1296475160 source:/home/samuel/projects/A10cpp/anathea/managers/sprite_mgr.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/sprite_mgr.cpp
 	"managers/sprite_mgr.hpp"
 	"managers/sprites/SpriteImage.hpp"
 	"managers/sprites/all_sprites.hpp"
 
-1296475159 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteBox.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteBox.cpp
 	"SpriteBox.hpp"
 	"managers/kernel.hpp"
 
-1298323400 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteDynamicImage.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteDynamicImage.cpp
 	"managers/sprites/SpriteDynamicImage.hpp"
 
-1298323400 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteImage.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteImage.cpp
 	"SpriteImage.hpp"
 	"managers/kernel.hpp"
 
-1296475159 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteLine.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteLine.cpp
 	"SpriteLine.hpp"
 	"managers/kernel.hpp"
 
-1298323400 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteMultiImage.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteMultiImage.cpp
 	"managers/sprites/SpriteMultiImage.hpp"
 
-1298323400 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteSkeleton.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteSkeleton.cpp
 	"SpriteSkeleton.hpp"
 
-1298323400 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteText.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/sprites/SpriteText.cpp
 	"SpriteText.hpp"
 	"managers/kernel.hpp"
 
-1329815617 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/skeleton_editor.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/skeleton_editor.cpp
 	"skeleton_editor.hpp"
 	"managers/kernel.hpp"
 
-1329841224 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_sprite.cpp
+1329895391 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_sprite.cpp
 	"widget_sprite.hpp"
 	"managers/kernel.hpp"
 
-1329826416 source:/home/samuel/projects/A10cpp/anathea/managers/kernel.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/kernel.cpp
 	"managers/kernel.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/time_mgr.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/time_mgr.cpp
 	"time_mgr.hpp"
 
-1329838381 source:/home/samuel/projects/A10cpp/anathea/managers/widget.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widget.cpp
 	"managers/widget.hpp"
 	"managers/kernel.hpp"
 	<boost/algorithm/string/predicate.hpp>
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_button.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_button.cpp
 	"widget_button.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_container.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_container.cpp
 	"widget_container.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_image.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_image.cpp
 	"widget_image.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_filetree.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_filetree.cpp
 	"widget_filetree.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_list.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_list.cpp
 	"widget_list.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_text.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_text.cpp
 	"widget_text.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_window.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/managers/widgets/widget_window.cpp
 	"widget_window.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/color.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/color.cpp
 	"tools/color.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/doubleval.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/doubleval.cpp
 	"doubleval.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/doubleval.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/doubleval.hpp
 	"tools/stringhelpers.hpp"
 	"tools/mathfuncs.hpp"
 	<iostream>
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/errorclass.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/errorclass.cpp
 	"errorclass.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/geometry.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/geometry.cpp
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/mathfuncs.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/mathfuncs.cpp
 	"mathfuncs.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/mathparser.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/mathparser.cpp
 	"tools/mathparser.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/mathparser.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/mathparser.hpp
 	<cmath>
 	<list>
 	<boost/function.hpp>
 	"tools/stringhelpers.hpp"
 
-1329825287 source:/home/samuel/projects/A10cpp/anathea/tools/directories.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/directories.cpp
 	"directories.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/directories.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/directories.hpp
 	<string>
 	<list>
 	<sys/stat.h>
 	<boost/filesystem.hpp>
 	"tools/errorclass.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/misc.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/misc.cpp
 	"misc.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/ordered_list.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/ordered_list.cpp
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/profiler.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/profiler.cpp
 	"profiler.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/profiler.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/profiler.hpp
 	<SDL/SDL.h>
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/shape.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/shape.cpp
 	"shape.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/stringhelpers.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/stringhelpers.cpp
 	"tools/stringhelpers.hpp"
 	<iostream>
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/ticpp.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/ticpp.cpp
 	"ticpp.h"
 	"ticpprc.h"
 	"tinyxml.h"
 	<sstream>
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/tinystr.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/tinystr.cpp
 	"tinystr.h"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/tinyxml.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/tinyxml.cpp
 	"tinyxml.h"
 	<ctype.h>
 	<sstream>
 	<iostream>
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/tinyxmlerror.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/tinyxmlerror.cpp
 	"tinyxml.h"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/tinyxmlparser.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/ticpp/tinyxmlparser.cpp
 	<ctype.h>
 	<stddef.h>
 	"tinyxml.h"
 	<windows.h>
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/tinyxml.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/tinyxml.cpp
 	"tinyxml.hpp"
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/tinyxml.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/tinyxml.hpp
 	<string>
 	"tools/ticpp/ticpp.h"
 	"tools/errorclass.hpp"
 
-1329742025 source:/home/samuel/projects/A10cpp/anathea/tools/vectormath.cpp
+1329894916 source:/home/samuel/projects/A10cpp/anathea/tools/vectormath.cpp
 	"vectormath.hpp"
 	<iostream>
 
-1329742025 /home/samuel/projects/A10cpp/anathea/tools/vectormath.hpp
+1329894916 /home/samuel/projects/A10cpp/anathea/tools/vectormath.hpp
 	"tools/geometry.hpp"
 
 1329842456 source:/home/samuel/projects/cpp/A10/anathea/managers/sprites/SpriteDynamicImage.cpp

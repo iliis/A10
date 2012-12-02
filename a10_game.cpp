@@ -177,28 +177,51 @@ A10_Game::getTileset(string path)
 void
 A10_Game::move_stuff(TimeVal delta)
 {
-	double sec = toSeconds(delta);
+	FNumber sec = toSeconds(delta);
+
+	FNumber h_accel = sec * player.horiz_acceleration;
+
 
 	//cout << "FPS: " << (1/sec) << endl;
+	//this->status_widget->setText("FPS: "+ToString(1/sec));
+	this->status_widget->setText("player.speed: "+player.getSpeed().print()+"\nsec: "+ToString(sec));
 
 	if(not paused and lives>0)
 	{
 
 		if(    this->kernel->inputMgr->getKeyState(KEY_RIGHT)
 			or this->kernel->inputMgr->getKeyState(KEY_d))
-			player.setHorizMovement(1);
+		{
+			if( player.getSpeed().x < player.horiz_speed)
+				player.getSpeed().x = player.getSpeed().x + h_accel;
+			else
+				player.getSpeed().x = player.horiz_speed;
+		}
 		else if(this->kernel->inputMgr->getKeyState(KEY_LEFT)
 			 or this->kernel->inputMgr->getKeyState(KEY_a))
-			player.setHorizMovement(-1);
+		{
+			if( player.getSpeed().x > -player.horiz_speed)
+				player.getSpeed().x = player.getSpeed().x - h_accel;
+			else
+				player.getSpeed().x = -player.horiz_speed;
+		}
 		else
-			player.setHorizMovement(0);
+		{
+			if(abs(player.getSpeed().x) > h_accel*1.5)
+				player.getSpeed().x = player.getSpeed().x - sgn(player.getSpeed().x)*h_accel*(player.touching?1:0.1); /// slower deacceleration in midair
+			else
+				player.getSpeed().x = 0;
+		}
+
 
 		if (   this->kernel->inputMgr->getKeyState(KEY_SPACE)
 			or this->kernel->inputMgr->getKeyState(KEY_UP)
 			or this->kernel->inputMgr->getKeyState(KEY_w))
-			player.jump();
+			player.jump(sec);
+
 
 		this->player.move(sec, this->getMainMap());
+
 
 		if(this->getMainMap().collides(this->player.shape, 2))
 		{

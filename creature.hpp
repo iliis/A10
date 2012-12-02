@@ -13,11 +13,14 @@ struct Creature
 	SpriteSkeleton  skeleton;
 	list<SkeletonKeyframe> anim_standing, anim_running_left, anim_running_right, *active_anim;
 	SkeletonKeyframe active_kf; list<SkeletonKeyframe>::iterator next_kf;
-	TimeVal frame_age, time_since_last_touch;
+	TimeVal frame_age, time_since_last_touch, time_since_last_jump;
 
 	CBox<Vect::T>    shape;
 	Vect speed, skeleton_delta;
-	FNumber horiz_speed, jump_speed;
+public:
+	const FNumber horiz_speed, jump_speed, /// max speed
+		horiz_acceleration, /// speed change / second
+		 vert_acceleration; /// additional vertical speed / second
 
 	bool touching;
 	FNumber health;
@@ -29,8 +32,12 @@ struct Creature
 	void set_current_animation(list<SkeletonKeyframe>& anim);
 
 	inline void setXSpeed(Vect::T s){this->speed.x = s;}
+	inline Vect::T getXSpeed(){return this->speed.x;}
+
+	inline Vect& getSpeed(){return this->speed;}
+
 	void setHorizMovement(int sgn);
-	void jump();
+	void jump(FNumber sec);
 	void swap_momentum(Creature& c);
 	void swap_position(Creature& c);
 

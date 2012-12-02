@@ -57,10 +57,6 @@
 					<Add option="-DHAVE_W32API_H" />
 					<Add option="-D__WXMSW__" />
 					<Add option="-D__WINDOWS__" />
-					<Add option="-DTIXML_USE_TICPP" />
-					<Add option="-DUSE_TINYXML" />
-					<Add option="-DUSE_PROPERTY_TREE" />
-					<Add option="-DDATA_DIR=empty" />
 					<Add directory="/opt/mingw/usr/i686-pc-mingw32/include" />
 					<Add directory="/home/samuel/projects/cpp/A10/anathea" />
 					<Add directory="/home/samuel/programme/boost_1_43_0" />
