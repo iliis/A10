@@ -1,180 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Release" />
-	<File name="anathea/managers/image_mgr.hpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="25" />
-			<Collapse line="53" />
-			<Collapse line="177" />
-			<Collapse line="197" />
-			<Collapse line="254" />
-			<Collapse line="266" />
-		</Folding>
+	<ActiveTarget name="Debug" />
+	<File name="a10_game.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
 	</File>
-	<File name="anathea/managers/image_mgr.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-			<Collapse line="18" />
-			<Collapse line="35" />
-			<Collapse line="46" />
-			<Collapse line="65" />
-			<Collapse line="73" />
-			<Collapse line="82" />
-			<Collapse line="108" />
-			<Collapse line="120" />
-			<Collapse line="213" />
-			<Collapse line="227" />
-			<Collapse line="242" />
-			<Collapse line="261" />
-			<Collapse line="280" />
-			<Collapse line="298" />
-			<Collapse line="312" />
-			<Collapse line="324" />
-			<Collapse line="334" />
-			<Collapse line="343" />
-			<Collapse line="379" />
-			<Collapse line="419" />
-			<Collapse line="426" />
-			<Collapse line="438" />
-			<Collapse line="448" />
-			<Collapse line="466" />
-			<Collapse line="481" />
-			<Collapse line="535" />
-			<Collapse line="604" />
-			<Collapse line="617" />
-			<Collapse line="632" />
-			<Collapse line="641" />
-			<Collapse line="697" />
-			<Collapse line="710" />
-			<Collapse line="723" />
-			<Collapse line="739" />
-			<Collapse line="746" />
-			<Collapse line="773" />
-			<Collapse line="788" />
-			<Collapse line="798" />
-			<Collapse line="804" />
-			<Collapse line="832" />
-			<Collapse line="848" />
-		</Folding>
-	</File>
-	<File name="tile_manager.hpp" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="anathea/tools/expression.hpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="346" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="25" />
-			<Collapse line="420" />
-			<Collapse line="459" />
-			<Collapse line="468" />
-		</Folding>
-	</File>
-	<File name="creature.hpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="85" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="anathea/managers/sprites/SpriteSkeleton.hpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1445" topLine="27" />
-		</Cursor>
-	</File>
-	<File name="tile_map.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-			<Collapse line="76" />
-			<Collapse line="82" />
-			<Collapse line="91" />
-			<Collapse line="110" />
-			<Collapse line="126" />
-			<Collapse line="140" />
-			<Collapse line="146" />
-			<Collapse line="152" />
-			<Collapse line="164" />
-		</Folding>
-	</File>
-	<File name="tile_manager.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="6" />
-			<Collapse line="14" />
-			<Collapse line="23" />
-			<Collapse line="37" />
-		</Folding>
-	</File>
-	<File name="map_widget.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-			<Collapse line="13" />
-			<Collapse line="32" />
-			<Collapse line="46" />
-		</Folding>
+	<File name="a10_game.hpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
 	</File>
 	<File name="anathea/managers/gui_mgr.hpp" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+		<Cursor1 position="0" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="anathea/managers/image_mgr.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
 	</File>
-	<File name="anathea/managers/sprites/SpriteSkeleton.cpp" open="1" top="1" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="10869" topLine="367" />
-		</Cursor>
+	<File name="anathea/managers/image_mgr.hpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
 	</File>
-	<File name="a10_game.hpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="19" />
-		</Folding>
+	<File name="anathea/managers/sprites/SpriteSkeleton.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
 	</File>
-	<File name="tile.hpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="9" />
-		</Folding>
+	<File name="anathea/managers/sprites/SpriteSkeleton.hpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
 	</File>
-	<File name="tile_map.hpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="9" />
-		</Folding>
+	<File name="anathea/managers/widgets/skeleton_editor.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="5843" topLine="149" />
+	</File>
+	<File name="anathea/managers/widgets/skeleton_editor.hpp" open="1" top="1" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="706" topLine="4" />
+	</File>
+	<File name="anathea/tools/expression.hpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="creature.hpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="544" topLine="9" />
+	</File>
+	<File name="map_widget.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
 	</File>
 	<File name="map_widget.hpp" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+		<Cursor1 position="0" topLine="0" />
 	</File>
-	<File name="a10_game.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="tile.hpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="tile_manager.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="tile_manager.hpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="tile_map.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="tile_map.hpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
