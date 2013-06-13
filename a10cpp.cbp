@@ -97,6 +97,7 @@
 			<Add library="GL" />
 			<Add library="boost_system" />
 			<Add library="boost_filesystem" />
+			<Add library="GLEW" />
 		</Linker>
 		<Unit filename="a10_common.hpp" />
 		<Unit filename="a10_game.cpp" />

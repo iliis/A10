@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
 <style>
-	<text font="fonts/DINPro-Bold.otf" size=18 text_color="white" quality="blended" />
+	<text font="fonts/FuturaStd-Book.ttf" size=12 text_color="white" quality="blended" />
 	<box  border="#AAA" fill="#af0" w=200 h=200 draw_border=1 />
 </style>

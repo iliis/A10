@@ -34,7 +34,7 @@ A10_Game::A10_Game( Kernel* k )
 void
 A10_Game::init()
 {
-	if(not kernel->isInitComplete()) throw Error("init", "Can't start A10 as basic systems are not properly initialized.");
+	if(not kernel->isInitComplete()) throw ERROR("init", "Can't start A10 as basic systems are not properly initialized.");
 
 	kernel->inputMgr->addKeyListener(boost::bind(&A10_Game::keyListener, this, _1, _2));
 	kernel->setCalcFrameFunc        (boost::bind(&A10_Game::move_stuff,  this, _1));
@@ -42,28 +42,28 @@ A10_Game::init()
 
 	setSize(this->kernel->graphicsMgr->getScreenSize().cast<Vect::T>());
 
-	start_screen = kernel->guiMgr->createWidget<WSprite>("start screen");
+	start_screen = kernel->guiMgr->createWidget<WImage>("start screen");
 
 	/*ptree pt = mkPtree("type", "image");
 	pt.put("path", "gfx/text/start.png");
 	start_screen->set(pt);*/
 
-	start_screen->setSprite(sprite_mgr.createSprite("image", mkPtree("path", "gfx/text/start.png")));
+	start_screen->setImage("gfx/text/start.png");
 	start_screen->setAbsPos(this->getSize()/2-start_screen->getSize()/2);
 
 	cout << "start_screen: " << start_screen->getSize().print() << endl;
 
-	gameover_screen = kernel->guiMgr->createWidget<WSprite>("gameover screen");
+	gameover_screen = kernel->guiMgr->createWidget<WImage>("gameover screen");
 	//pt.put("path","gfx/text/gameover.png");
 	//gameover_screen->set(pt);
-	gameover_screen->setSprite(sprite_mgr.createSprite("image", mkPtree("path", "gfx/text/gameover.png")));
+	gameover_screen->setImage("gfx/text/gameover.png");
 	gameover_screen->setAbsPos(this->getSize()/2-gameover_screen->getSize()/2);
 	gameover_screen->hide();
 
-	died_screen = kernel->guiMgr->createWidget<WSprite>("died screen");
+	died_screen = kernel->guiMgr->createWidget<WImage>("died screen");
 	//pt.put("path","gfx/text/died.png");
 	//died_screen->set(pt);
-	died_screen->setSprite(sprite_mgr.createSprite("image", mkPtree("path", "gfx/text/died.png")));
+	died_screen->setImage("gfx/text/died.png");
 	died_screen->setAbsPos(this->getSize()/2-died_screen->getSize()/2);
 	died_screen->hide();
 
@@ -134,7 +134,8 @@ A10_Game::draw()
 		//this->cursor_direction.draw_rotated(player_pos, angle, Vect(0, 0.5));
 
 		double dist = cursor_delta.length(); if(dist < 100) dist = 100;
-		this->cursor_arrow.draw_rotated(player_pos + Vect(dist * cos(angle), dist*sin(angle)), angle, Vect(0.5, 0.5));
+		//uncomment to show cursor
+		//this->cursor_arrow.draw_rotated(player_pos + Vect(dist * cos(angle), dist*sin(angle)), angle, Vect(0.5, 0.5));
 	}
 };
 //------------------------------------------------------------------------------

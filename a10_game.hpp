@@ -23,7 +23,7 @@ class A10_Game : public Widget
 
 	boost::shared_ptr<MapWidget>    map_widget, mapf_widget;
 	boost::shared_ptr<HealthWidget> health_widget;
-	boost::shared_ptr<WSprite> start_screen, gameover_screen, died_screen;
+	boost::shared_ptr<WImage> start_screen, gameover_screen, died_screen;
 	boost::shared_ptr<WText> status_widget;
 	std::map<string, TileSet*> tilesets;
 

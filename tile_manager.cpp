@@ -61,6 +61,6 @@ TileSet::loadFromFile(string path)
 		tfile.close();
 	}
 	else
-		throw Error("load", "Can't read tiles-file at all: '"+path+"'");
+		throw ERROR("load", "Can't read tiles-file at all: '"+path+"'");
 };
 //------------------------------------------------------------------------------

@@ -13,29 +13,29 @@ TileMap::loadFromFile(string map_file_path, boost::function<TileSet*(string)> ti
 	{
 		string tiles_file;
 
-		getline(map_file, tiles_file); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
+		getline(map_file, tiles_file); if(not map_file.good()) throw ERROR("parse", "Can't read from map file: '"+map_file_path+"'");
 		//this->readTilesFile(tiles_file);
 		this->tiles = tileset_factory(tiles_file);
 		assert(tiles);
 
 		string line;
-		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
+		getline(map_file, line); if(not map_file.good()) throw ERROR("parse", "Can't read from map file: '"+map_file_path+"'");
 		this->size.x = boost::lexical_cast<int>(line);
 
-		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
+		getline(map_file, line); if(not map_file.good()) throw ERROR("parse", "Can't read from map file: '"+map_file_path+"'");
 		this->size.y = boost::lexical_cast<int>(line);
 
 		if(this->size.x <= 0 or this->size.y <= 0)
-			throw Error("parse", "Invalid width/height in '"+map_file_path+"'.");
+			throw ERROR("parse", "Invalid width/height in '"+map_file_path+"'.");
 
-		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
+		getline(map_file, line); if(not map_file.good()) throw ERROR("parse", "Can't read from map file: '"+map_file_path+"'");
 		this->tile_size.x = boost::lexical_cast<int>(line);
 
-		getline(map_file, line); if(not map_file.good()) throw Error("parse", "Can't read from map file: '"+map_file_path+"'");
+		getline(map_file, line); if(not map_file.good()) throw ERROR("parse", "Can't read from map file: '"+map_file_path+"'");
 		this->tile_size.y = boost::lexical_cast<int>(line);
 
 		if(this->tile_size.x <= 0 or this->tile_size.y <= 0)
-			throw Error("parse", "Invalid tile-width/height in '"+map_file_path+"'.");
+			throw ERROR("parse", "Invalid tile-width/height in '"+map_file_path+"'.");
 
 		data = new Tile*  [size.x*size.y];
 		setNULL(data, size.x*size.y);
@@ -70,7 +70,7 @@ TileMap::loadFromFile(string map_file_path, boost::function<TileSet*(string)> ti
 		cout << "successfully loaded " << map_file_path << endl;
 	}
 	else
-		throw Error("load","Can't read map file at all: '"+map_file_path+"'");
+		throw ERROR("load","Can't read map file at all: '"+map_file_path+"'");
 };
 //------------------------------------------------------------------------------
 TileMap::~TileMap()
